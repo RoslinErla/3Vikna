@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 27.4.2020:
   Ég bjó til Github repository og bætti öllum við það, og setti þar inn verkefnalýsinguna og diaries sem hver einstaklingur gat
   svo bara fyllt inní. 
@@ -10,16 +10,4 @@
   Vorum með fund þar sem við fórum einnig saman yfir kröfurnar og kröfulistann og allt sem var gert yfir daginn.
   
   
-=======
-27.4.2020:
-  Ég bjó til Github repository og bætti öllum við það, og setti þar inn verkefnalýsinguna og diaries sem hver einstaklingur gat
-  svo bara fyllt inní. 
-  
-  Ég teiknaði upp wireframes og skoðaði svipaðar síður inná netinu og skrifaði niður hugmyndir. Bætti við í Other í skýrslunni hvaðan ég fékk hugmyndir. 
-  
-  Við lærðum öll á discord og reyndum að nota það. 
-  Höfðum 3 fundi yfir daginn þar sem við hittumst og ræddum um hvernig allt gekk og hvað við værum að gera og skiptum niður verkefnum.
-  Vorum með fund þar sem við fórum einnig saman yfir kröfurnar og kröfulistann og allt sem var gert yfir daginn.
-  
-  
->>>>>>> 3ab9cb758323694f618e71d49b49a8294facb822
+
