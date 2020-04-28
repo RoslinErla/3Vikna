@@ -1,4 +1,5 @@
 Day 1. Team breefing, lectures, report analysis on agenda.
 Day 2. 10am team meeting, functional requirements sorting, prototype interview question check. Creation. 
 
-Requirement Anlaysis Report is nearly complete. Interview had been recorded. Work on the bigger picture and usability goals is is process.
+Requirement Anlaysis Report is nearly complete. Interview had been recorded. Work on the bigger picture and usability goals is is progress. 
+
