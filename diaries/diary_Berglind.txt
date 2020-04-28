@@ -1,15 +1,20 @@
-<<<<<<< HEAD
-Dagur 1 – 27. Apríl: 
+
+Dagur 1 – 27. apríl: 
 
 	Horfði á myndböndin, setti upp öll forritin og lærði betur á þau. 
-=======
-Dagur 1 â€“ 27. aprÃ­l: 
+	Gerði notendahópa-greiningu
+	Ræddum um forgangsröðun á kröfunum.
 
-	HorfÃ°i Ã¡ myndbÃ¶ndin, setti upp Ã¶ll forritin og lÃ¦rÃ°i betur Ã¡ Ã¾au. 
-	GerÃ°i notendahÃ³pa-greiningu
-	RÃ¦ddum um forgangsrÃ¶Ã°un Ã¡ krÃ¶funum. 
 
-Dagur 2 - 28. aprÃ­l: 
+
+Dagur 2 - 28. apríl: 
+
+	Smá tæknilegir erfiðleikar, náðum ekki að tala öll saman í Discord, prófuðum facebook call og google call.
+	Skársta niðurstaðan: ég heyrði í þeim en þau heyrðu ekki í mér, og ég skrifaði á chattinu. 
+	Ræddum um kröfurnar, prototype interview spurningarnar og skiptum niður notkunartilvikunum. 
+	Gerði 4 notkunartilvik. Eitt þeirra var svo tekið út. 
 
 	
->>>>>>> 64ffac0201f4b36b431a5024a0feaa5469d4e3f5
+
+	
+
