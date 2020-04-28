@@ -1,0 +1,3 @@
+4/27/20
+Watched the video lectures for this course. Set up some of the tools we'll be using on my personal computer. Got familiar with git again.
+Worked on the requirement analysis report, with a focus on the requirement list.
