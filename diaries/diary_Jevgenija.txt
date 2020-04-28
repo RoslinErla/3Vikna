@@ -3,3 +3,5 @@ Day 2. 10am team meeting, functional requirements sorting, prototype interview q
 
 Requirement Anlaysis Report is nearly complete. Interview had been recorded. Work on the bigger picture and usability goals is is progress. 
 
+Functional requirements had been updated. Interviews overview for a final submission.
+Design report is about to begin. 
