@@ -1,16 +1,14 @@
 Day 1. Team breefing, lectures, report analysis on agenda.
 Day 2. 10am team meeting, functional requirements sorting, prototype interview question check. Creation. 
 
-<<<<<<< HEAD
+
 Requirement Anlaysis Report is nearly complete. Interview had been recorded.
 =======
 Requirement Anlaysis Report is nearly complete. Interview had been recorded. Work on the bigger picture and usability goals is is progress. 
 
 Functional requirements had been updated. Interviews overview for a final submission.
 Design report is about to begin. 
-<<<<<<< HEAD
 
-Usability goals: Effectiveness and Efficiency for each functional requirement in prioarity A.
-=======
->>>>>>> be223aa3514f9f3fe5d5479dff90ac84bb4796de
->>>>>>> 5e27d9d09575d4d0f16eea684cc63f7305cb7d41
+
+Usability goals: Effectiveness and Efficiency for each functional requirement in priority A completed.
+
