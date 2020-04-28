@@ -12,6 +12,8 @@ Dagur 2 - 28. apríl:
 	Smá tæknilegir erfiðleikar, náðum ekki að tala öll saman í Discord, prófuðum facebook call og google call.
 	Skársta niðurstaðan: ég heyrði í þeim en þau heyrðu ekki í mér, og ég skrifaði á chattinu. 
 	Ræddum um kröfurnar, prototype interview spurningarnar og skiptum niður notkunartilvikunum. 
+	Gerði 4 notkunartilvik. Eitt þeirra var svo tekið út. 
+
 	
 
 	
