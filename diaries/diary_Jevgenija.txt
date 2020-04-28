@@ -5,3 +5,5 @@ Requirement Anlaysis Report is nearly complete. Interview had been recorded. Wor
 
 Functional requirements had been updated. Interviews overview for a final submission.
 Design report is about to begin. 
+
+Usability goals: Effectiveness and Efficiency for each functional requirement in prioarity A.
