@@ -14,6 +14,7 @@
    Hópurinn hittist og skipti niður requirements svo hver og einn gæti farið og gert nokkur notkunartilvik. Gerði 4 notkunartilvik. 
    Fórum saman yfir spurningar fyrir viðtöl og bættum við. Ég fór síðan og tók 2 viðtöl og tók þau saman. Tók einnig saman eitt annað viðtal frá öðrum
    hópmeðlimi. Uppfærði aðeins inspiration í other og bætti við myndum. Fór yfir stafsetningu or málfræði í verkefninu.
+   Gerði usability goals og user experience goals.
  
   
   
