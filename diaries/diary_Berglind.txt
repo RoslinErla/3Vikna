@@ -13,7 +13,13 @@ Dagur 2 - 28. apríl:
 	Skársta niðurstaðan: ég heyrði í þeim en þau heyrðu ekki í mér, og ég skrifaði á chattinu. 
 	Ræddum um kröfurnar, prototype interview spurningarnar og skiptum niður notkunartilvikunum. 
 	Gerði 4 notkunartilvik. Eitt þeirra var svo tekið út. 
-	Gerði big picture map. 
+	Gerði big picture map.
+
+Dagur 3 - 29. apríl: 
+
+	"Hittumst" öll á Discord og fórum yfir þarfagreiningarskýrsluna og löguðum stafsetningu og annað sem okkur fannst ábótavant. 
+	Tók prototype viðtal og setti niðurstöður þess í skýrsluna. 
+	Hittum aðstoðarkennara á fundi og skiptum svo niður verkefnum fyrir hönnunarskýrsluna.  
 
 
 	
