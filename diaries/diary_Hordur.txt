@@ -1,3 +1,10 @@
 4/27/20
 Watched the video lectures for this course. Set up some of the tools we'll be using on my personal computer. Got familiar with git again.
 Worked on the requirement analysis report, with a focus on the requirement list.
+
+4/28/20
+Went over the requirement analysis report and fixed some spelling and wording mistakes, worked on finishing the requirement list, helped
+with finishing writing down all the interview questions, Created some use cases from the requirement list and took an interview with a
+friend with the questions we created, putting his answers down and then writing it into the report. 
+
+4/29/20
