@@ -1,4 +1,5 @@
 Day 1. Team breefing, lectures, report analysis on agenda.
+
 Day 2. 10am team meeting, functional requirements sorting, prototype interview question check. Creation. 
 
 
@@ -13,3 +14,7 @@ Usability goals: Effectiveness and Efficiency for each functional requirement in
 Day3. Assignment 1 completed. 
 
 Assignment 2: Design Report had been started and work in Navigation diagram. 
+
+Day4.
+
+Navigation diagram had been implemented into design report, flow chart diagram is erect onto further development. 
