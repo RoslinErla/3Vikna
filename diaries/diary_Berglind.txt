@@ -20,6 +20,14 @@ Dagur 3 - 29. apríl:
 	"Hittumst" öll á Discord og fórum yfir þarfagreiningarskýrsluna og löguðum stafsetningu og annað sem okkur fannst ábótavant. 
 	Tók prototype viðtal og setti niðurstöður þess í skýrsluna. 
 	Hittum aðstoðarkennara á fundi og skiptum svo niður verkefnum fyrir hönnunarskýrsluna.  
+	Ég byrjaði á að gera klasaritið. 
+
+Dagur 4 - 30. apríl: 
+
+	Hittumst á Discord kl 10 og fórum yfir það sem við vorum búin að gera og unnum saman að úrbætum á ýmsu. 
+	Kláraði klasaritið 
+	Skrifaði forritunarreglur (ekki alveg klárað samt)
+	Hittumst aftur á Discord kl 16 og fórum yfir og löguðum það sem við vorum búin með. 
 
 
 	
