@@ -1,9 +1,9 @@
-Day 1. Team breefing, lectures, report analysis on agenda.
+Day 1. Team breafing, lectures, report analysis on agenda.
 
 Day 2. 10am team meeting, functional requirements sorting, prototype interview question check. Creation. 
 
 
-Requirement Anlaysis Report is nearly complete. Interview had been recorded. Work on the bigger picture and usability goals is is progress. 
+Requirement Analyses Report is nearly complete. Interview had been recorded. Work on the bigger picture and usability goals is is progress. 
 
 Functional requirements had been updated. Interviews overview for a final submission.
 Design report is about to begin. 
@@ -21,4 +21,4 @@ Navigation diagram had been implemented into design report, flow chart diagram i
 
 Interview had been collected.
 
-Day 5. Design report had bee completed.
+Day 5. Design report had been completed and submitted. 
