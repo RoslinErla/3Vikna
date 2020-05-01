@@ -17,13 +17,14 @@
    Gerði usability goals og user experience goals.
    
 29.4.2020
-Bjó til prótotýpu fyrir síðuna. Sem lítur næstum út eins og lokaafurðin. Skrifaði smá um hvernig interviewið ætti að vera framkvæmt og bjó til bakgrunnsspurningar og tók eitt viðtal. Hjálaði Herði að setja upp verkefnin sem áttu að vera framkvæmd í viðtalinu inní excel skjal. 
+Bjó til beinagrindina fyrir design report og deildi með öllum því skjali. Skiptum niður verkum fyrir design report.
+Bjó til prótotýpu fyrir síðuna. Sem lítur næstum út eins og lokaafurðin. Skrifaði smá um hvernig interviewið ætti að vera framkvæmt og bjó til bakgrunnsspurningar og tók eitt viðtal. Hjálpaði Herði að setja upp verkefnin sem áttu að vera framkvæmd í viðtalinu inní excel skjal. 
 
 30.4.2020
-Gerði stöðurit fyrir síðun og tók 1 viðtöl. Skrifaði smá niður í next steps and changes bara um það sem væri nauðsynlegt að breyta í prototýpunni fyrir lokaskil. Hópurinn hittist og fór yfir það sem gert var í gær
+Gerði stöðurit fyrir síðun og tók 1 viðtal. Skrifaði smá niður í next steps and changes bara um það sem væri nauðsynlegt að breyta í prototýpunni fyrir lokaskil. Hópurinn hittist og fór yfir það sem gert var í gær
 
 1.5.2020.
-Fór yfir stafsetningu og byrjaði að horfa á myndbönd um hvernig pycharm virkar. Hópurinn hittist og skrifaði introduction í design report og fór yfir það sem gert var í gær.
+Fór yfir stafsetningu og byrjaði að horfa á myndbönd um hvernig pycharm virkar og byrjaði að setja verkefnið upp þar. Hópurinn hittist og skrifaði introduction í design report og fór yfir það sem gert var í gær.
  
   
   
