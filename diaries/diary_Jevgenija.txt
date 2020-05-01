@@ -18,3 +18,5 @@ Assignment 2: Design Report had been started and work in Navigation diagram.
 Day4.
 
 Navigation diagram had been implemented into design report, flow chart diagram is erect onto further development. 
+
+Interview had been collected.
