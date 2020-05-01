@@ -20,3 +20,5 @@ Day4.
 Navigation diagram had been implemented into design report, flow chart diagram is erect onto further development. 
 
 Interview had been collected.
+
+Day 5. Design report had bee completed.
