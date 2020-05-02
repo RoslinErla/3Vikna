@@ -22,3 +22,5 @@ Navigation diagram had been implemented into design report, flow chart diagram i
 Interview had been collected.
 
 Day 5. Design report had been completed and submitted. 
+
+Day 6. Candy Queen Django lectures.
