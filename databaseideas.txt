@@ -1,0 +1,2 @@
+manufacturer(id, name, start_year)
+products(id, name, description, price, manufacturer(foreign key), type(console,games,...)
