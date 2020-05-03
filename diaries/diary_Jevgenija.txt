@@ -23,4 +23,8 @@ Interview had been collected.
 
 Day 5. Design report had been completed and submitted. 
 
-Day 6. Candy Queen Django lectures.
+Day 6. Candy Queen Django lectures watched. Pycharm installed and in process of exploration.
+
+Day 7. Sunday, morning team meeting, further steps discussed. Status: ahead of schedule. 
+
+Task: connect database to psql, watch lectures, add to packages.

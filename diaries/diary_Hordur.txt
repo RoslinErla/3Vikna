@@ -8,3 +8,10 @@ with finishing writing down all the interview questions, Created some use cases 
 friend with the questions we created, putting his answers down and then writing it into the report. 
 
 4/29/20
+Spell checked the requirement analysis report and added the final touches to it with the other team members, Started working on the design report going over a bit of the UI design and made some interview questions.
+
+4/30/20
+Finished setting up the interview questions for the think-aloud interviews and took one interview with a person, the group began working more on the design report after we had finished the requirement analysis report. I helped with the class diagram with the group and then put up the prototypes so everything would go smoothly when every member took their interviews for the website.
+
+5/1/20
+Worked a bit on the introdcution and the programming rules with the other team member and I went over the think aloud interviews to make a summary out of them.
