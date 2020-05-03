@@ -34,3 +34,15 @@ class Customer():
 class CaptainConsole():
     def __init__(self):
         pass
+
+    def filterByType(self):
+        pass
+
+    def search(self):
+        pass
+
+    def orderByName(self):
+        pass
+
+    def orderByPrice(self):
+        pass
