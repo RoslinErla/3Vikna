@@ -29,6 +29,9 @@ Fór yfir stafsetningu og byrjaði að horfa á myndbönd um hvernig pycharm vir
 2.5.2020.
 Bjó til pycharm fyrir verkefnið. Setti upp beinagrind fyrir allt verkefnið í pycharm. Bjó til base síðuna fyrir verkefnið og navigation barinn. Bjó til öll templates og applications sem mun þurfa fyrir verkefnið. 
 gerði öll url og þau eru notanleg.
+
+3.5.2020.
+tengdi database við verkefnið og byrjaði að skoða hvernig models væri uppsett.
  
   
   
