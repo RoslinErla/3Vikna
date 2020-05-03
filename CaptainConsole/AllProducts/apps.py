@@ -13,3 +13,21 @@ class InsertProduct():
 
     def ChangeProduct(self):
         pass
+
+#ekki alveg viss í hvaða packages þetta þarf að fara, svo skal ég setja það hér
+
+class Customer():
+    def __init__(self):
+        pass
+
+    def Login(self):
+        pass
+
+    def signUp(self):
+        pass
+#vantar að bætta við search history og payment info í cutomer
+
+class CaptainConsole():
+    def __init__(self):
+        pass
+
