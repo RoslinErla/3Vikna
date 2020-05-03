@@ -28,3 +28,5 @@ Day 6. Candy Queen Django lectures watched. Pycharm installed and in process of 
 Day 7. Sunday, morning team meeting, further steps discussed. Status: ahead of schedule. 
 
 Task: connect database to psql, watch lectures, add to packages.
+
+Created a set of classes.
