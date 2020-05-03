@@ -25,6 +25,10 @@ Gerði stöðurit fyrir síðun og tók 1 viðtal. Skrifaði smá niður í next
 
 1.5.2020.
 Fór yfir stafsetningu og byrjaði að horfa á myndbönd um hvernig pycharm virkar og byrjaði að setja verkefnið upp þar. Hópurinn hittist og skrifaði introduction í design report og fór yfir það sem gert var í gær.
+
+2.5.2020.
+Bjó til pycharm fyrir verkefnið. Setti upp beinagrind fyrir allt verkefnið í pycharm. Bjó til base síðuna fyrir verkefnið og navigation barinn. Bjó til öll templates og applications sem mun þurfa fyrir verkefnið. 
+gerði öll url og þau eru notanleg.
  
   
   
