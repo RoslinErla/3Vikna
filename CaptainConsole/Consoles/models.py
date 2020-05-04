@@ -6,6 +6,3 @@ from django.db import models
 # CandyImage - image, candy
 # CandyCategory - name
 # Manufacturer - name, year_of_start, logo
-
-class CaptainConsole(models.model):
-    pass
