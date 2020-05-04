@@ -8,3 +8,4 @@ from django.db import models
 # Manufacturer - name, year_of_start, logo
 
 class CaptainConsole(models.model):
+    pass
