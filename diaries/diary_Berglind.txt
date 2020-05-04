@@ -41,8 +41,16 @@ Dagur 5 - 1. maí:
 
 
 
+Helgin 2-3 maí: 
 
+	Horfði á Candy Queen myndböndin aftur og setti það eins upp í Pycharm, tengdi við gagnagrunninn og glósaði. Byrjaði að reyna að setja upp vefsíðuna fyrir Captain Console.
+
+
+Dagur 8 - 4.maí: 
 	
+	Hittumst á discord kl 11 og fórum yfir stöðuna. Róslín var búin að setja upp grunninn fyrir Captain Console. Við ræddum um hvernig væri best að halda áfram 
+	og fórum á fund með aðstoðarkennara kl 12.
+	Við skiptum niður með okkur verkefnum. Ég fann leiki fyrir síðuna (name, description, price, image) og bjó til insert sql-file fyrir gagnagrunninn.
 
 	
 
