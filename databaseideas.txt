@@ -1,7 +1,0 @@
-Products(id, name, description, price, manufacturer, type -- models all products
-
-Productimg(id, products(foreign key), image(url))
-
-Customer(id, name(optional), username, pic(optional), password(hashed))
-
-
