@@ -1,0 +1,12 @@
+INSERT INTO Products
+VALUES ('Shirt 1', 'Retro Gamer Shirt', 'A high quality unisex T-shirt for retro gamers', 'Nintendo', 'Merchandise')
+VALUES ('Poster 1', 'The Legend of Zelda poster', 'A 12x18 inch poster of the vintage box art from the original Legend of Zelda game', 'Nintendo', 'Merchandise')
+VALUES ('Funko Pop 1', 'Funko Pop! Pikachu', 'A 4 inch tall stylized POP vinyl of a Waving Pikachu from Pokemon.', 'Pokemon', 'Merchandise')
+VALUES ('Funko Pop 2', 'Funko Pop! Bulbasaur', 'A 4 inch tall stylized POP vinyl of a Bulbasaur from Pokemon', 'Pokemon', 'Merchandise')
+
+
+INSER INTO Productimg
+VALUES ('Shirt 1 img', Products(Shirt 1), image(nes_shirt.png))
+VALUES ('Poster 1 img', Products(Poster 1), image(zelda_poster.png))
+VALUES ('Funko Pop 1 img', Products(Funko Pop 1), image(pop_pikachu.png))
+VALUES ('Funko Pop 2 img', Products(Funko Pop w), image(pop_bulbasaur.png))
