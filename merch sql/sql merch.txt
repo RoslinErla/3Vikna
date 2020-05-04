@@ -10,7 +10,7 @@ VALUES ('Funko Pop! Bulbasaur', 'A 4 inch tall stylized POP vinyl of a Bulbasaur
 
 INSERT INTO ProductImage
 VALUES ('Retro gamer shirt ID', Products(Retro gamer shirt ID), image(nes_shirt.png))
-INSERT INTO Productimageg
+INSERT INTO Productimage
 VALUES ('Zelda poster ID', Products(Zelda poster ID), image(zelda_poster.png))
 INSERT INTO Productimage
 VALUES ('Funko Pop Pikachu ID', Products(Funko Pop pikachu ID), image(pop_pikachu.png))
