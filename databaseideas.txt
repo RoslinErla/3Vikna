@@ -1,6 +1,4 @@
-Manufacturer(id, name, start_year) xx
-
-Products(id, name, description, price, manufacturer(foreign key-string), type -- models all products
+Products(id, name, description, price, manufacturer, type -- models all products
 
 Productimg(id, products(foreign key), image(url))
 
