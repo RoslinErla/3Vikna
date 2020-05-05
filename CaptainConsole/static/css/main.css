@@ -38,12 +38,31 @@ navbar-animation {
     background-image: -o-linear-gradient(to right, --add image--);
 }
 
+.products .product {
+    border-radius: 0;
+    border-style: solid;
+    border-color: dimgrey;
+    margin: 5px;
+    background-color: white;
+    text-align: center;
+}
+
 .products {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-img{
-    width: 100px;
-    height:100px;
+
+
+.product-image {
+    width: 200px;
+    height: 200px;
+}
+
+.block {
+    display: block;
+}
+
+.container {
+    margin-top: 38px;
 }
