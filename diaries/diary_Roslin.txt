@@ -35,8 +35,9 @@ tengdi database við verkefnið og byrjaði að skoða hvernig models væri upps
 
 4.5.2020.
 Lenti í veseni með venv og þurfti að setja það allt upp aftur. Kláraði að gera models til að búa til töflurnar í elephantsql. Runaði migrate og makemigrations og allt það og notaði síðan
-fill.sql skrárnar sem krakkarnir bjuggu til til að fylla inní töflurnar. Lagaði síðan aðeins töflurnar. Setti upp nokkur URL sem vantaði. 
- 
+fill.sql skrárnar sem krakkarnir bjuggu til til að fylla inní töflurnar. Lagaði síðan aðeins töflurnar. Setti upp nokkrar import tengingar sem vantaði. Setti síðan upp hvernig forritið fer
+í gegnum töfluna og sýna það á skjánum og breytti aðeins útlitinu bara svo það var auðveldara að sjá allt og svona. Engin lokaútlit heldur bara drög. Gerði fill fyrir eina töflu sem
+ég sá að vantaði. Hjálpaði flestum í hópnum með tæknivesen.
   
   
 
