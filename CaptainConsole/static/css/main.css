@@ -1,5 +1,9 @@
 .header {
+<<<<<<< HEAD
     background-image: url("https://images-ext-1.discordapp.net/external/uZYAlpxMoCj-yqTBgPlIngD8AzrNm9dIeOscb54uoUU/https/www.thesharpproject.co.uk/assets/games-banner-02-1.jpg%22");
+=======
+    background-image: url("https://images-ext-1.discordapp.net/external/uZYAlpxMoCj-yqTBgPlIngD8AzrNm9dIeOscb54uoUU/https/www.thesharpproject.co.uk/assets/games-banner-02-1.jpg");
+>>>>>>> e7dfc56148a1292a35dfdda92adff34d617ed74d
     background-position: center;
     margin-right:auto;
     margin-left:auto;
