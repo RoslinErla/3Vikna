@@ -38,6 +38,7 @@ navbar-animation {
     background-image: -o-linear-gradient(to right, --add image--);
 }
 
+
 .products .product {
     border-radius: 0;
     border-style: solid;
@@ -51,7 +52,6 @@ navbar-animation {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
 
 
 .product-image {
