@@ -16,5 +16,7 @@ Finished setting up the interview questions for the think-aloud interviews and t
 5/1/20
 Worked a bit on the introdcution and the programming rules with the other team member and I went over the think aloud interviews to make a summary out of them.
 
-6/1/20
+5/4/20
 Helped a team member with putting up virtual env and Django, created fill.sql stuff for the website. 
+
+5/5/20

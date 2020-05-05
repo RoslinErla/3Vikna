@@ -1,15 +1,20 @@
 .header {
-    background-image: url("https://images-ext-1.discordapp.net/external/uZYAlpxMoCj-yqTBgPlIngD8AzrNm9dIeOscb54uoUU/https/www.thesharpproject.co.uk/assets/games-banner-02-1.jpg");
+    background-image: url("https://images-ext-1.discordapp.net/external/uZYAlpxMoCj-yqTBgPlIngD8AzrNm9dIeOscb54uoUU/https/www.thesharpproject.co.uk/assets/games-banner-02-1.jpg%22);
     background-color: rgb(18,45,56);
     background-position: center;
+    margin-right:auto;
+    margin-left:auto;
+    border-radius: 100%;
+    border-style: solid;
     border-color: #80B9E5;
-    margin-left: auto;
-    margin-right: auto;
-    margin-color:back
     background-repeat: no-repeat;
     background-size: cover;
     height: 250px;
     max-width: 800px;
+}
+
+.active{
+    border-bottom-color: black;
 }
 
 .navbar-nav li:hover .dropdown-menu {
@@ -18,11 +23,20 @@
 a {
     box-sizing: border-box;
     font-family: Roboto;
+    color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'raleway';
     font-weight: bold;
+}
+
+.nav-item{
+    border-right-color: lightblue;
+    border-right-style: dotted;
+}
+.nav-item .nav-link{
+    font-size: 25px;
 }
 
 navbar {
@@ -48,9 +62,19 @@ navbar-animation {
     border-radius: 0;
     border-style: solid;
     border-color: dimgrey;
-    margin: 5px;
+    margin-bottom: 40px;
+    margin-left: 20px;
     background-color: white;
     text-align: center;
+}
+
+.products .product:hover{
+    border-color: hotpink;
+}
+
+.products .product a:hover{
+    color: black;
+    text-decoration: None;
 }
 
 .products {
