@@ -39,4 +39,6 @@ iss 1: since it is a tiny turtle plan only one team member can have access to da
 
 iss 2: only three people can view webpage at the same time.
 
+Productive day. Css page is in process of group effort of development. Team members had been working on a design colouring aspect of the the web page. Great effort. 
+
 
