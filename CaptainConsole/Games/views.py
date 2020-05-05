@@ -1,6 +1,10 @@
 from django.shortcuts import render
 
-# Create your views here.
-def index(request):
-    return render(request, "games/index.html")
+from AllProducts.models import Product
 
+# Create your views here.
+
+
+def index(request):
+    context = {'products': Product.objects.filter(type='Games').order_by('name')}
+    return render(request, 'consoles/index.html', context)

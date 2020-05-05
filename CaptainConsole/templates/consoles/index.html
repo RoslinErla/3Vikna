@@ -1,4 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h1>Welcome to the consoles page</h1>
+
+<div class = "products">
+    {% for product in products %}
+        {% include 'allProducts/single_product.html' with product=product %}
+    {% endfor %}
+</div>
+
+
 {% endblock %}
