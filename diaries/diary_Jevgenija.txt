@@ -33,5 +33,10 @@ Created a set of classes.
 
 Day 8. Database creation, set up, fill. 
 
-Day 9. Database work.
+Day 9. Database work in progress by Róslín 
+
+iss 1: since it is a tiny turtle plan only one team member can have access to database. 
+
+iss 2: only three people can view webpage at the same time.
+
 
