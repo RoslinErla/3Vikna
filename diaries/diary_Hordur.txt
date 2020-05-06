@@ -20,3 +20,5 @@ Worked a bit on the introdcution and the programming rules with the other team m
 Helped a team member with putting up virtual env and Django, created fill.sql stuff for the website. 
 
 5/5/20
+Found images for merch products to be used on the site, worked on the css and html code, worked with the team members online together on the css and html code to decide how the web page would look.
+
