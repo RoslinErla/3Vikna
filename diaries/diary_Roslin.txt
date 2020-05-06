@@ -42,6 +42,9 @@ fill.sql skrárnar sem krakkarnir bjuggu til til að fylla inní töflurnar. Lag
 5.5.2020.
 Fann auka myndir fyrir þá hluti sem ég setti í töfluna. Vorum að vinna í css skjalinu og gerðum það til skiptis. Einhver var að deila skjánum sínum og var að setja inn í css og hinir
 voru að googla og svona til að hjálpa. Kláraði að breyta active í navbar. Fyllti síðan inn í töflurnar í databaseinu með þeim myndum sem allir fundu.
+
+6.5.2020.
+Fórum yfir það sem átti eftir að gera til að fullklára síðuna og skiptum þeim niður á milli okkar.
   
   
 
