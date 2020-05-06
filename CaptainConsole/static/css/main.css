@@ -12,10 +12,16 @@
     max-width: 800px;
 }
 
-.active{
+.active {
     border-bottom-color: black;
 }
 
+.my-sm-0 {
+    background-color: lightblue !important;
+}
+body {
+    background-color: white;
+}
 .navbar-nav li:hover .dropdown-menu {
     display: block;
 }
@@ -32,15 +38,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-item{
     border-right-color: lightblue;
-    border-right-style: dotted;
+    border-right-style: solid;
+
 }
 .nav-item .nav-link{
     font-size: 25px;
 }
 
+.bg-light {
+
+    background-color: lightblue !important;
+}
+
 navbar {
     position: center;
     overflow: no-content;
+
 }
 
 navbar-brand {
