@@ -62,7 +62,22 @@
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
         </form>
+
+        <ul class="navbar-nav navbar-right ml-auto">
+             <li class="form-inline my-2 my-lg-0">
+                <a href="https://facebook.com"><button class="btn btn-link btn-lg" id="Login">Login</button></a>
+            </li>
+
+            <li class="form-inline my-2 my-lg-0">
+                <a href="https://youtube.com"> <button type="button" class="btn btn-outline-dark btn-lg">Sign up</button> </a>
+            </li>
+            &nbsp;
+
+            <a class="navbar-brand" href="{% url 'cart-index' %}">
+                 <ion-icon size="large" name="cart-outline"></ion-icon>
+            </a>
+        </ul>
       </div>
     </nav>

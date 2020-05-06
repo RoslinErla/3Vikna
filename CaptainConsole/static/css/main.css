@@ -12,9 +12,6 @@
     max-width: 800px;
 }
 
-.active {
-    border-bottom-color: black;
-}
 
 .my-sm-0 {
     background-color: lightblue !important;
@@ -43,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav-item .nav-link{
     font-size: 25px;
+    color: black;
 }
 
 .bg-light {
@@ -106,4 +104,41 @@ navbar-animation {
 
 .container {
     margin-top: 38px;
+}
+
+.btn-link {
+    color: black;
+}
+
+footer {
+    border-style: solid;
+    border-color: blue;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+#Contact-us {
+    text-align: center;
+}
+
+#logos {
+    text-align: center;
+}
+
+#follow-us {
+    text-align: center;
+}
+
+#logos img {
+    width: 70px;
+    height: 70px;
+}
+
+
+
+
+footer #nintendo {
+    width: 90px;
+    height: 70px;
 }
