@@ -65,15 +65,21 @@
           <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
         </form>
 
-        <ul class="navbar-nav navbar-right ml-auto">
-             <li class="form-inline my-2 my-lg-0">
-                <a href="https://facebook.com"><button class="btn btn-link btn-lg" id="Login">Login</button></a>
-            </li>
+        {% if user.is_authenticated %}
+            <li> <a href="{% url 'logout' %}"><button class="btn btn-link btn-lg" id="Logout">Login</button></a></li>
 
-            <li class="form-inline my-2 my-lg-0">
-                <a href="https://youtube.com"> <button type="button" class="btn btn-outline-dark btn-lg">Sign up</button> </a>
-            </li>
+        {% else %}
+            <ul class="navbar-nav navbar-right ml-auto">
+             <li class="form-inline my-2 my-lg-0">
+                <a href="{% url 'login' %}"><button class="btn btn-link btn-lg" id="Login">Login</button></a>
+             </li>
+
+             <li class="form-inline my-2 my-lg-0">
+                <a href="{% url 'User-index' %}"> <button type="button" class="btn btn-outline-dark btn-lg">Sign up</button> </a>
+             </li>
             &nbsp;
+        {% endif %}
+
 
             <a class="navbar-brand" href="{% url 'cart-index' %}">
                  <ion-icon size="large" name="cart-outline"></ion-icon>

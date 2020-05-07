@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'Accessories.apps.AccessoriesConfig',
     'AllProducts.apps.AllproductsConfig',
     'cart.apps.CartConfig',
+    'User.apps.AdminConfig',
 ]
 
 MIDDLEWARE = [
@@ -63,8 +64,7 @@ ROOT_URLCONF = 'CaptainConsole.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -134,3 +134,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
+
+LOGIN_URL = '/admin/login'
+LOGIN_REDIRECT_URL = '/admin'

@@ -1,6 +1,6 @@
 from django.db import models
 
-
+# Create your models here.
 
 
 class Product(models.Model):
@@ -9,9 +9,6 @@ class Product(models.Model):
     price = models.FloatField()
     manufacturer = models.CharField(max_length=255)
     type = models.CharField(max_length=255)
-    recommended = models.BooleanField()
-
-
 
     def __str__(self):
         return self.name
