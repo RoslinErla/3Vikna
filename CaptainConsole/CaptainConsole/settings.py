@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     'Games.apps.GamesConfig',
     'Consoles.apps.ConsolesConfig',
     'Accessories.apps.AccessoriesConfig',
-    "AllProducts.apps.AllproductsConfig",
+    'AllProducts.apps.AllproductsConfig',
+    'Admin.apps.AdminConfig',
+
 
 ]
 
@@ -134,3 +136,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
+
+LOGIN_URL = '/admin/login'
+LOGIN_REDIRECT_URL = '/admin'
