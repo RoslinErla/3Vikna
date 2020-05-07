@@ -12,9 +12,6 @@
     max-width: 800px;
 }
 
-.active {
-    border-bottom-color: black;
-}
 
 .my-sm-0 {
     background-color: lightblue !important;
@@ -43,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav-item .nav-link{
     font-size: 25px;
+    color: black;
 }
 
 .bg-light {
@@ -50,17 +48,17 @@ h1, h2, h3, h4, h5, h6 {
     background-color: lightblue !important;
 }
 
-navbar {
+.navbar {
     position: center;
     overflow: no-content;
 
 }
 
-navbar-brand {
+.navbar-brand {
     position: relative;
 }
 
-navbar-animation {
+.navbar-animation {
     position: absolute;
     top: -1500 px;
     bottom: -1500px;
@@ -106,4 +104,66 @@ navbar-animation {
 
 .container {
     margin-top: 38px;
+}
+
+.btn-link {
+    color: black;
+}
+
+footer {
+    border-style: solid;
+    border-color: blue;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+#Contact-us {
+    text-align: center;
+}
+
+#logos {
+    text-align: center;
+}
+
+#follow-us {
+    text-align: center;
+}
+
+#logos img {
+    width: 70px;
+    height: 70px;
+}
+
+
+footer #nintendo {
+    width: 90px;
+    height: 70px;
+}
+
+.cart-header{
+    text-align: center;
+}
+
+.total-cart{
+      text-align: right;
+      padding-right: 100px;
+
+}
+
+.cart-item-info {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart{
+  border: 3px solid black;
+}
+
+.bottom-buttons{
+    text-align: right;
+    padding-right: 100px;
 }

@@ -44,8 +44,8 @@ INSTALLED_APPS = [
     'Games.apps.GamesConfig',
     'Consoles.apps.ConsolesConfig',
     'Accessories.apps.AccessoriesConfig',
-    "AllProducts.apps.AllproductsConfig",
-
+    'AllProducts.apps.AllproductsConfig',
+    'cart.apps.CartConfig',
 ]
 
 MIDDLEWARE = [
