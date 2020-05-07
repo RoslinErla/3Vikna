@@ -1,5 +1,5 @@
-{% extend 'base.html' %}
-{% blockcontent %}
+{% extends 'base.html' %}
+{% block content %}
     <form method="post" class="form form-horizontal">
         {% csrf_token %}
         {{ form }}
