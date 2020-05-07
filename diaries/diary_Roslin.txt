@@ -44,7 +44,10 @@ Fann auka myndir fyrir þá hluti sem ég setti í töfluna. Vorum að vinna í 
 voru að googla og svona til að hjálpa. Kláraði að breyta active í navbar. Fyllti síðan inn í töflurnar í databaseinu með þeim myndum sem allir fundu.
 
 6.5.2020.
-Fórum yfir það sem átti eftir að gera til að fullklára síðuna og skiptum þeim niður á milli okkar.
+Fórum yfir það sem átti eftir að gera til að fullklára síðuna og skiptum þeim niður á milli okkar. Bjó til fully functional footer. Kláraði (að ég held) navigation barinn. Núna er hann með login og sign up og cart takka og search bar.
+
+
+
   
   
 
