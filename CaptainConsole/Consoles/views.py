@@ -9,3 +9,7 @@ def index(request):
     context = {'products': Product.objects.filter(type='Consoles').order_by('name')}
     return render(request, 'consoles/index.html', context)
 
+
+def index2(request):
+    context = {'products': Product.objects.filter(type='Consoles').order_by('price')}
+    return render(request, 'consoles/index.html', context)
