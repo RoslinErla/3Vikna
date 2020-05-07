@@ -1,4 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h1>Welcome to the homepage</h1>
+    <h1>Products we recommend</h1>
+    <div class = "products">
+        {% for product in products %}
+            {% include 'allProducts/single_product.html' with product=product %}
+        {% endfor %}
+    </div>
+
 {% endblock %}

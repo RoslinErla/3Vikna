@@ -1,4 +1,22 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h1>Welcome to the accessories page</h1>
+    <h1>Accessories</h1>
+
+    <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Sort by</a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href={% url "allProducts-index" %}>Name</a>
+            <a class="dropdown-item" href={% url "allProducts-index2" %}>Price</a>
+        </div>
+
+    </div>
+    <br>
+
+    <div class = "products">
+        {% for product in products %}
+            {% include 'allProducts/single_product.html' with product=product %}
+        {% endfor %}
+    </div>
 {% endblock %}
