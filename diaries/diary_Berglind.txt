@@ -52,5 +52,15 @@ Dagur 8 - 4.maí:
 	og fórum á fund með aðstoðarkennara kl 12.
 	Við skiptum niður með okkur verkefnum. Ég fann leiki fyrir síðuna (name, description, price, image) og bjó til insert sql-file fyrir gagnagrunninn.
 
+
+Dagur 9 - 5.maí: 
+	Hittumst á Discord og fórum yfir ýmsa hluti. Ég fann 3 myndir í viðbót fyrir hvern tölvuleik til að setja í gagnagrunninn. 
+	Við unnum öll saman í útliti síðunnar í CSS skránni. 
+
+
+Dagur 10 - 6.maí
+	Hittumst á Discord og fórum yfir það sem á eftir að gera, fórum yfir kröfulistann til að vera viss um að gleyma engu. 
+	"Hittum" aðstoðarkennarann á discord kl 12. 
+	Skiptum með okkur verkefnum. Ég Setti inn sort by og filter by fídusana og tengdi við url-in. 
 	
 
