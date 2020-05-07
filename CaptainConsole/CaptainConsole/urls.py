@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-"""localhos:3000/admin"""
+"""localhost:3000/admin"""
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,6 +27,8 @@ urlpatterns = [
     path('accessories/', include('Accessories.urls')),
     path('merchandise/', include('Merchandise.urls')),
     path('allProducts/', include('AllProducts.urls')),
+    path('cart/', include('cart.urls')),
+    path('profile/', include('Customer.urls')),
 
 
 ]
