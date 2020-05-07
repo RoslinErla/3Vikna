@@ -48,17 +48,17 @@ h1, h2, h3, h4, h5, h6 {
     background-color: lightblue !important;
 }
 
-navbar {
+.navbar {
     position: center;
     overflow: no-content;
 
 }
 
-navbar-brand {
+.navbar-brand {
     position: relative;
 }
 
-navbar-animation {
+.navbar-animation {
     position: absolute;
     top: -1500 px;
     bottom: -1500px;
