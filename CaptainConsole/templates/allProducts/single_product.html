@@ -1,7 +1,7 @@
 <div class = "one product">
-    <a href="#">
+    <a href="/{{ product.id }}">
     <img class="product-image" src = "{{ product.productimage_set.first.image }}"/>
     <h4>{{ product.name }}</h4>
-    <p>{{ product.price }} isk</p>
+    <p>{{ product.price }} ISK</p>
     </a>
 </div>

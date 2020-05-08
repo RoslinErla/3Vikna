@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from AllProducts.models import Product
 
@@ -13,3 +13,4 @@ def index(request):
 def index2(request):
     context = {'products': Product.objects.filter(type='Accessories').order_by('price')}
     return render(request, "accessories/index.html", context)
+
