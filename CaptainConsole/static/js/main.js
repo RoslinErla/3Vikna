@@ -28,8 +28,10 @@ for (let i = 0; i <itemToCartButton.length; i++) {
 
 function cartAddClick(event){
     let button = event.target
-    let singleProductId = button.id
-    console.log(singleProductId)
+    let singleProductList = button.id.split(",")
+    console.log(singleProductList)
+    let singleProductName = singleProductList[1]
+    console.log(singleProductName)
 }
 
 function changingQuantity(event) {
