@@ -20,6 +20,18 @@ for (let i = 0; i <itemRemover.length; i++) {
         input.addEventListener('change', changingQuantity)
     }
 
+let itemToCartButton = document.getElementsByClassName('add-to-cart-btn')
+for (let i = 0; i <itemToCartButton.length; i++) {
+    let button = itemToCartButton[i]
+    button.addEventListener('click', cartAddClick)
+}
+
+function cartAddClick(event){
+    let button = event.target
+    let singleProductId = button.id
+    console.log(singleProductId)
+}
+
 function changingQuantity(event) {
     let input = event.target
     if(isNaN(input.value) || input.value <=0){
