@@ -25,6 +25,9 @@ function changingQuantity(event) {
     if(isNaN(input.value) || input.value <=0){
         input.value = 1
     }
+    if(isNaN(input.value) || 5 < input.value){
+        input.value = 5
+    }
     updateTotal()
 }
 
