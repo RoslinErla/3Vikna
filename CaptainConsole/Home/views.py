@@ -10,7 +10,6 @@ def index(request):
     return render(request, "home/index.html", context)
 
 
-# /home/1
 def get_product_by_id(request, id):
     return render(request, 'home/product_details.html', {
         'products': get_object_or_404(Product, pk=id )
