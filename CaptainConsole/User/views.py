@@ -11,8 +11,11 @@ def register(request):
         if form.is_valid():
             form.save()
             return redirect('login')
-        else:
-            print("mamma")
     return render(request, 'admin/register.html', {
          'form': form
         })
+
+def profile(request):
+    pass
+
+
