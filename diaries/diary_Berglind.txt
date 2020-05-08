@@ -71,5 +71,6 @@ Dagur 11 - 7.maí
 Dagur 12 - 8.maí:
 	Hittumst á Discord kl 10 og fórum yfir það sem við vorum búin að gera og það sem við vorum í vandræðum með. Hittum aðstoðarkennara kl 12. 
 	Gerði allar myndir af vörum "clickable" þannig að maður fengi product details: fleiri myndir, description, price ofl.  
+	Lagaði urlið þegar smellt er á vörurnar. Bætti við add to cart takka í detailed products. 
 
 

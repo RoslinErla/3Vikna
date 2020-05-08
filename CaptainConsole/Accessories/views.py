@@ -33,3 +33,9 @@ def index6(request):
     context = {'products': Product.objects.filter(type='Accessories').filter(manufacturer__icontains='playstation')}
     return render(request, 'accessories/index.html', context)
 
+
+def get_product_by_id(request, id):
+    return render(request, 'home/product_details.html', {
+        'products': get_object_or_404(Product, pk=id )
+
+    })
