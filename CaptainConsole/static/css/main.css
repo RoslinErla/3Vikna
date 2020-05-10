@@ -197,3 +197,11 @@ footer #nintendo {
   border-style: solid;
   border-width: thin;
 }
+
+.form-control {
+    display: block;
+}
+
+.checkbox {
+    display: block;
+}
