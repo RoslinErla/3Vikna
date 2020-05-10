@@ -29,6 +29,7 @@ for (let i = 0; i <itemToCartButton.length; i++) {
 function cartAddClick(event){
     let button = event.target
     let singleProductList = button.id.split(",")
+    console.log(singleProductList)
     let productName = singleProductList[1]
     let productPrice = singleProductList[2]
     let productImgSrc = singleProductList[3]
@@ -40,6 +41,7 @@ function cartAddClick(event){
 //    localStorage.setItem('product-name', productName)
 //    console.log(localStorage)
 //}
+
 function moveItemToCart(productName, productPrice, productImgSrc){
     let newItem = document.createElement('div')
     newItem.classList.add('all-items')
@@ -58,6 +60,7 @@ function moveItemToCart(productName, productPrice, productImgSrc){
         </div>`
     newItem.innerHTML = cartRowContents
     console.log(newItem)
+
     document.getElementsByClassName('all-items')[0].append(newItem)
 }
 
@@ -86,9 +89,7 @@ function updateTotal() {
    let singleItem = singleItems[i]
    let itemPrice = singleItem.getElementsByClassName('price')[0]
    let itemQuantity = singleItem.getElementsByClassName('cart-quantity')[0]
-   console.log(itemPrice,itemQuantity)
    let price = parseFloat(itemPrice.innerText.replace('isk', ''))
-   console.log(price)
    let numberQuantity = itemQuantity.value
    total = total + (price * numberQuantity)
  }
