@@ -29,9 +29,36 @@ for (let i = 0; i <itemToCartButton.length; i++) {
 function cartAddClick(event){
     let button = event.target
     let singleProductList = button.id.split(",")
-    console.log(singleProductList)
-    let singleProductName = singleProductList[1]
-    console.log(singleProductName)
+    let productName = singleProductList[1]
+    let productPrice = singleProductList[2]
+    let productImgSrc = singleProductList[3]
+    console.log(productName, productPrice, productImgSrc)
+    moveItemToCart(productName, productPrice, productImgSrc)
+}
+
+//function moveItemToCart(productName, productPrice, productImgSrc){
+//    localStorage.setItem('product-name', productName)
+//    console.log(localStorage)
+//}
+function moveItemToCart(productName, productPrice, productImgSrc){
+    let newItem = document.createElement('div')
+    newItem.classList.add('all-items')
+    //let itemsInCart = document.getElementsByClassName('all-items')[0]
+    let cartRowContents = `
+        <div class="cart-item-info">
+        <img class="cart-item-image" src="${productImgSrc}" width="100" height="100">
+        &emsp;
+        <p class="cart-item-title">${productName}</p>
+        &emsp;
+        <span class="price">${productPrice}</span>
+        &emsp;
+        <input class="cart-quantity" type="number" value="1">
+        &emsp;
+        <button class="remove-button" type="button">X</button>
+        </div>`
+    newItem.innerHTML = cartRowContents
+    console.log(newItem)
+    document.getElementsByClassName('all-items')[0].append(newItem)
 }
 
 function changingQuantity(event) {
