@@ -46,6 +46,23 @@ voru að googla og svona til að hjálpa. Kláraði að breyta active í navbar.
 6.5.2020.
 Fórum yfir það sem átti eftir að gera til að fullklára síðuna og skiptum þeim niður á milli okkar. Bjó til fully functional footer. Kláraði (að ég held) navigation barinn. Núna er hann með login og sign up og cart takka og search bar.
 
+7.5.2020.
+Lagaði villur sem annar hópmeðlimur gerði. Hjálpaði hópmeðlimum með sín verkefni og bætti við í models í allproducts. Bjó til search appið og byrjaði að horfa á myndbönd um hvernig væri hægt
+að búa til search bar
+
+8.5.2020.
+Fann nokkrar villur í navbar og lagaði þær. Núna er navbar orðin tengdur við login form og sign up form og það allt. Ef þú ert núna innskráður þá færðu logout takka og profile takka (samt bara svona first draft).
+Vann í því að breyta sign up forminu svo núna er hægt að velja mynd og skrá netfang og nafn og svona.
+
+9.5.2020.
+Skoðaði aðeins betur hvernig ætti að setja upp svona search bar sem virkar og hvernig ætti að betrumbæta sort by og filter by (föttuðum að þeir virka aðeins í sitthvoru lagi, ekki saman)
+
+10.5.2020. 
+Hjálpaði hópmeðlimi að  reyna að skilja skrýtna villu sem  við fengum upp. Bjó til profile sjálft þar sem þú getur breytt mynd, nafni og email. Bjó til create form fyrir nýjar vörur
+Sá að það voru nokkrar myndir sem voru í databaseinu sem var greinilega búið að eyða af upprunalegu slóðinni svo þær komu ekki upp svo ég fór og uppfærði töflurnar. 
+Setti navbar upp þannig að ef þú ert loggaður inn þá kemur prófíl myndin þín í staðinn fyrir login takkann. Og skoðaði hvernig ég gæti látið upprunalega mynd alltaf vera sú sama.
+
+
 
 
   
