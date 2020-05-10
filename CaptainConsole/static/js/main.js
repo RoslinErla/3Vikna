@@ -29,6 +29,7 @@ for (let i = 0; i <itemToCartButton.length; i++) {
 function cartAddClick(event){
     let button = event.target
     let singleProductList = button.id.split(",")
+    console.log(singleProductList)
     let productName = singleProductList[1]
     let productPrice = singleProductList[2]
     let productImgSrc = singleProductList[3]
