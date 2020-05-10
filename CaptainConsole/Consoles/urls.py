@@ -7,5 +7,6 @@ urlpatterns = [
     path('nintendo', views.index3, name='consoles-index3'),
     path('atari', views.index4, name='consoles-index4',),
     path('sega', views.index5, name='consoles-index5'),
-    path('playstation', views.index6, name='consoles-index6')
+    path('playstation', views.index6, name='consoles-index6'),
+    path('<int:id>', views.get_product_by_id, name="consoles_Product_details")
 ]

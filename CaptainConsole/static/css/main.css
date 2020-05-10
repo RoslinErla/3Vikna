@@ -168,3 +168,21 @@ footer #nintendo {
     text-align: right;
     padding-right: 100px;
 }
+
+.success {
+
+    background-color: lightblue;
+    width: 30%;
+    text-align: center;
+    border: solid black;
+    margin-top: 17%;
+    margin-left: 35%;
+
+
+}
+
+.back_to_home {
+
+    margin-left: 70%;
+
+}

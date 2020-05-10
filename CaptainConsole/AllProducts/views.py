@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from AllProducts.models import Product
 
 
@@ -33,3 +33,10 @@ def index5(request):
 def index6(request):
     context = {'products': Product.objects.filter(manufacturer__icontains="Playstation")}
     return render(request, 'allProducts/index.html', context)
+
+
+def get_product_by_id(request, id):
+    return render(request, 'home/product_details.html', {
+        'products': get_object_or_404(Product, pk=id )
+
+    })
