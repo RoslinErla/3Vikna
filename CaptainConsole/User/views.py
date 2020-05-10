@@ -1,7 +1,9 @@
 from django.contrib.auth.forms import UserCreationForm
+from User.models import Profile
 from django.shortcuts import render, redirect
 
-# new admin login credentials
+from User.forms.profile_form import ProfileForm
+from User.models import Profile
 
 
 def register(request):
@@ -15,7 +17,19 @@ def register(request):
          'form': form
         })
 
+
 def profile(request):
-    pass
+    profile = Profile.objects.filter(user=request.user).first()
+    if request.method == 'POST':
+        form = ProfileForm(instance=profile, data=request.POST)
+        if form.is_valid():
+            profile = form.save(commit=False)
+            profile.user = request.user
+            profile.save()
+            return redirect('profile')
+
+    return render(request, 'admin/profile.html', {
+        'form': ProfileForm(instance=profile)
+    })
 
 

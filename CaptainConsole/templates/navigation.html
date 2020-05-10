@@ -66,7 +66,11 @@
         </form>
 
         {% if user.is_authenticated %}
-            <li> <a href="{% url 'logout' %}"><button class="btn btn-link btn-lg" id="Logout">Login</button></a></li>
+            <ul class="navbar-nav navbar-right ml-auto">
+            <li> <a href="{% url 'profile' %}"><img src="{{ user.profile.profile_image }}" class="profile-image"></a></li>
+            <li> <a href="{% url 'logout' %}"><button class="btn btn-link btn-lg" id="Logout">Logout</button></a></li>
+            </ul>
+
 
         {% else %}
             <ul class="navbar-nav navbar-right ml-auto">
@@ -79,7 +83,6 @@
              </li>
             &nbsp;
         {% endif %}
-
 
             <a class="navbar-brand" href="{% url 'cart-index' %}">
                  <ion-icon size="large" name="cart-outline"></ion-icon>

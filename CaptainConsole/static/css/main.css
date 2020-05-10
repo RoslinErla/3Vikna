@@ -186,3 +186,14 @@ footer #nintendo {
     margin-left: 70%;
 
 }
+
+.profile-image {
+    width: 70px;
+    border-radius: 100%;
+}
+
+.profile-image:hover {
+  border-color: hotpink;
+  border-style: solid;
+  border-width: thin;
+}
