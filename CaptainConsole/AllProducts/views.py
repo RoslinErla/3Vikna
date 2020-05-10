@@ -37,6 +37,16 @@ def index6(request):
 
 def get_product_by_id(request, id):
     return render(request, 'home/product_details.html', {
-        'products': get_object_or_404(Product, pk=id )
+        'products': get_object_or_404(Product, pk=id)
+    })
 
+
+def create_product(request):
+    if request.method == 'POST':
+        print(1)
+    else:
+        form = ProductCreateForm()
+
+    return render(request, 'allProducts/create_product.html', {
+        'form': form
     })
