@@ -37,6 +37,5 @@ def index6(request):
 
 def get_product_by_id(request, id):
     return render(request, 'home/product_details.html', {
-        'products': get_object_or_404(Product, pk=id )
-
+        'products': get_object_or_404(Product, pk=id)
     })

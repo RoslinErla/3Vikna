@@ -3,7 +3,7 @@ $(document).ready(function(){
         e.preventDefault();
         let searchText = $('#search-box').val();
         $.ajax({
-            url: '/allProducts?search_filter=' + searchText,
+            url: '?search_filter=' + searchText,
             type: 'GET',
             success: function (resp) {
                 let newHtml = resp.data.map(d => {
@@ -11,10 +11,12 @@ $(document).ready(function(){
                                 <a href="/${d.id}">
                                     <img class="product-image" src="${d.firstImage}"/>
                                     <h4>${d.name}</h4>
-                                    <p>${d.price}</p>
+                                    <p>${d.price} isk</p>
                                 </a>
                             </div>`
                 });
+                $('h2').empty()
+                $('.show').empty()
                 $('.products').html(newHtml.join(''));
                 $('#search-box').val();
             },

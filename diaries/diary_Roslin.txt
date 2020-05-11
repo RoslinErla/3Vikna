@@ -62,6 +62,9 @@ Hjálpaði hópmeðlimi að  reyna að skilja skrýtna villu sem  við fengum up
 Sá að það voru nokkrar myndir sem voru í databaseinu sem var greinilega búið að eyða af upprunalegu slóðinni svo þær komu ekki upp svo ég fór og uppfærði töflurnar. 
 Setti navbar upp þannig að ef þú ert loggaður inn þá kemur prófíl myndin þín í staðinn fyrir login takkann. Og skoðaði hvernig ég gæti látið upprunalega mynd alltaf vera sú sama.
 
+11.5.2020. 
+Bjó til delete og change form fyrir vörur. Breytti model í profile svo upprunalega myndin en alltaf sú sama hjá öllum. Bætti við search bar og takka sem virka alveg fullkomlega. 
+Hjálpaði með Hörð með cart. Breytti smá sign up forminu sem ég var komin með og tengdi það síðan við síðuna svo það er formið sem kemur upp ef þú ýtir á sign up.
 
 
 
