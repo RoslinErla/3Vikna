@@ -200,8 +200,44 @@ footer #nintendo {
 
 .form-control {
     display: block;
+
 }
+
+
 
 .checkbox {
     display: block;
 }
+
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1080px)  {
+    .form-inline input.form-control {
+        width: 40%;
+
+    }
+
+    #Login {
+        font-size: 15px;
+    }
+
+    #signup {
+        height: 5%;
+        font-size: 15px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 315px) and (max-width: 991px)  {
+    .container {
+        display: inline-block;
+
+    }
+
+
+
+}
+
