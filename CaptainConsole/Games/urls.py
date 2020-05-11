@@ -8,5 +8,6 @@ urlpatterns = [
     path('atari', views.index4, name='games-index4', ),
     path('sega', views.index5, name='games-index5'),
     path('playstation', views.index6, name='games-index6'),
+    path('atari/price/', views.index7, name='games-index7'),
     path('<int:id>', views.get_product_by_id, name="games_Product_details")
 ]

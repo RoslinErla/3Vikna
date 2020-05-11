@@ -45,6 +45,11 @@ def index6(request):
     return render(request, 'games/index.html', context)
 
 
+def index7(request):
+    context = {'products': Product.objects.filter(type='Games').filter(manufacturer__icontains='Atari').order_by('price')}
+    return render(request, 'games/index.html', context)
+
+
 def get_product_by_id(request, id):
     if 'search_filter' in request.GET:
         search = request.GET['search_filter']
