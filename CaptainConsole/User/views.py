@@ -3,16 +3,20 @@ from User.models import Profile
 from django.shortcuts import render, redirect
 
 from User.forms.profile_form import ProfileForm
+from User.forms.forms import NewUserForm
 from User.models import Profile
 
 
 def register(request):
-    form = UserCreationForm()
     if request.method == 'POST':
-        form = UserCreationForm(data=request.POST)
+        form = NewUserForm(data=request.POST)
         if form.is_valid():
-            form.save()
+            user = form.save()
+            image = Profile(user_id=user.id)
+            image.save()
             return redirect('login')
+    else:
+        form = NewUserForm()
     return render(request, 'admin/register.html', {
          'form': form
         })

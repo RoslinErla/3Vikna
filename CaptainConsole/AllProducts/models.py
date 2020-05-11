@@ -9,8 +9,6 @@ class Product(models.Model):
     type = models.CharField(max_length=255)
     recommended = models.BooleanField()
 
-
-
     def __str__(self):
         return self.name
 
