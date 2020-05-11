@@ -10,4 +10,6 @@ urlpatterns = [
     path('playstation/', views.index6, name="allProducts-index6"),
     path('<int:id>', views.get_product_by_id, name="allProduct_details"),
     path('create_product/', views.create_product, name="create_product"),
+    path('delete_product/<int:id>', views.delete_product, name="delete_product"),
+    path('update_product/<int:id>', views.update_product, name="update_product")
 ]

@@ -1,3 +1,32 @@
+$(document).ready(function(){
+    $('#search-btn').on('click', function(e) {
+        e.preventDefault();
+        let searchText = $('#search-box').val();
+        $.ajax({
+            url: '/allProducts?search_filter=' + searchText,
+            type: 'GET',
+            success: function (resp) {
+                let newHtml = resp.data.map(d => {
+                    return `<div class="one product"> 
+                                <a href="/${d.id}">
+                                    <img class="product-image" src="${d.firstImage}"/>
+                                    <h4>${d.name}</h4>
+                                    <p>${d.price}</p>
+                                </a>
+                            </div>`
+                });
+                $('.products').html(newHtml.join(''));
+                $('#search-box').val();
+            },
+            error: function (xhr, status, error) {
+                console.log(error);
+
+            }
+        })
+    })
+})
+
+
 jQuery(function($) {
  let path = window.location.href; // because the 'href' property of the DOM element is the absolute path
   $('ul a').each(function() {

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    <form class="form form-horizontal" action={% url 'update_product' id %} method="post">
+        {% csrf_token %}
+        {{ form }}
+        <br>
+        <input type="submit" value="update" class="btn btn-primary">
+    </form>
+{% endblock %}

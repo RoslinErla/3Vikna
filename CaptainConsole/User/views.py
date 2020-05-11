@@ -1,4 +1,6 @@
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
+
 from User.models import Profile
 from django.shortcuts import render, redirect
 
@@ -29,7 +31,12 @@ def profile(request):
         if form.is_valid():
             profile = form.save(commit=False)
             profile.user = request.user
+            user = User(first_name=request.POST['first_name'],
+                        last_name=request.POST['last_name'],
+                        email=request.POST['email'],
+                        id=request.user)
             profile.save()
+            user.save()
             return redirect('profile')
 
     return render(request, 'admin/profile.html', {
