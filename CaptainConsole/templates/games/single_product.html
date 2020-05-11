@@ -4,5 +4,5 @@
     <h4>{{ product.name }}</h4>
     <p>{{ product.price }} ISK</p>
     </a>
-    <a id = "{{ product.id }}, {{ product.name }}, {{ product.price }}" class = "add-to-cart-btn" type="button">Add to Cart</a>
+    <a href = "{% url 'add-to-cart' product.id %}" class = "add-to-cart-btn" type="button">Add to Cart</a>
  </div>
