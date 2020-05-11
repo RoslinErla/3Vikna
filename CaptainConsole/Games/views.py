@@ -27,27 +27,44 @@ def index2(request):
 
 def index3(request):
     context = {'products': Product.objects.filter(type='Games').filter(manufacturer__icontains='Nintendo')}
-    return render(request, 'games/index.html', context)
+    return render(request, 'games/nintendo.html', context)
 
 
 def index4(request):
     context = {'products': Product.objects.filter(type='Games').filter(manufacturer__icontains='Atari')}
-    return render(request, 'games/index.html', context)
+    return render(request, 'games/atari.html', context)
 
 
 def index5(request):
     context = {'products': Product.objects.filter(type='Games').filter(manufacturer__icontains='sega')}
-    return render(request, 'games/index.html', context)
+    return render(request, 'games/sega.html', context)
 
 
 def index6(request):
     context = {'products': Product.objects.filter(type='Games').filter(manufacturer__icontains='playstation')}
-    return render(request, 'games/index.html', context)
+    return render(request, 'games/playstation.html', context)
 
 
 def index7(request):
     context = {'products': Product.objects.filter(type='Games').filter(manufacturer__icontains='Atari').order_by('price')}
-    return render(request, 'games/index.html', context)
+    return render(request, 'games/atari.html', context)
+
+
+def index8(request):
+    context = {'products': Product.objects.filter(type='Games').filter(manufacturer__icontains='Nintendo').order_by('price')}
+    return render(request, 'games/nintendo.html', context)
+
+
+def index9(request):
+    context = {'products': Product.objects.filter(type='Games').filter(manufacturer__icontains='playstation').order_by('price')}
+    return render(request, 'games/playstation.html', context)
+
+
+def index10(request):
+    context = {'products': Product.objects.filter(type='Games').filter(manufacturer__icontains='sega').order_by('price')}
+    return render(request, 'games/sega.html', context)
+
+
 
 
 def get_product_by_id(request, id):
