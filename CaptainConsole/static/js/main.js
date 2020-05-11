@@ -2,6 +2,7 @@ $(document).ready(function(){
     $('#search-btn').on('click', function(e) {
         e.preventDefault();
         let searchText = $('#search-box').val();
+        console.log(searchText)
         $.ajax({
             url: '?search_filter=' + searchText,
             type: 'GET',
@@ -15,7 +16,10 @@ $(document).ready(function(){
                                 </a>
                             </div>`
                 });
+                $('h4').empty()
+                $('h1').empty()
                 $('h2').empty()
+                $('.product-details').remove()
                 $('.show').empty()
                 $('.products').html(newHtml.join(''));
                 $('#search-box').val();
