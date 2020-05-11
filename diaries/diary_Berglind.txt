@@ -74,3 +74,11 @@ Dagur 12 - 8.maí:
 	Lagaði urlið þegar smellt er á vörurnar. Bætti við add to cart takka í detailed products. 
 
 
+Helgin 9 - 10.maí: 
+	Bjó til success síðuna sem kemur þegar búið er að setja inn payment info og purchase. 
+
+
+Dagur 15 - 11.maí
+	Hittumst á discord og fórum yfir hluti. Hittum aðstoðarkennara kl 12 og annan aðstoðarkennara til að hjálpa okkur. 
+	Bjó til media queries í css til að síðan líti vel út við mismunandi skjástærðir. 
+

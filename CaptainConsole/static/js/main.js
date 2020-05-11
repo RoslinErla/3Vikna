@@ -1,12 +1,10 @@
 jQuery(function($) {
- var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
+ let path = window.location.href; // because the 'href' property of the DOM element is the absolute path
   $('ul a').each(function() {
-  if (this.href === path) {
-   console.log(this)
+  if (this.href === path)
    $(this).addClass('active');
-  }
+  })
  });
-});
 
 let itemRemover = document.getElementsByClassName('remove-button')
 for (let i = 0; i <itemRemover.length; i++) {
@@ -32,7 +30,7 @@ function cartAddClick(event){
     console.log(singleProductList)
     let productName = singleProductList[1]
     let productPrice = singleProductList[2]
-    let productImgSrc = singleProductList[3]
+    let productImgSrc = document.getElementById(singleProductList[0]).src
     console.log(productName, productPrice, productImgSrc)
     moveItemToCart(productName, productPrice, productImgSrc)
 }
