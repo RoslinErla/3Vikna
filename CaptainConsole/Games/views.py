@@ -35,6 +35,11 @@ def index6(request):
     return render(request, 'games/index.html', context)
 
 
+def index7(request):
+    context = {'products': Product.objects.filter(type='Games').filter(manufacturer__icontains='Atari').order_by('price')}
+    return render(request, 'games/index.html', context)
+
+
 def get_product_by_id(request, id):
     return render(request, 'home/product_details.html', {
         'products': get_object_or_404(Product, pk=id )
