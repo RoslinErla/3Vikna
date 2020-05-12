@@ -65,8 +65,6 @@ def index10(request):
     return render(request, 'games/sega.html', context)
 
 
-
-
 def get_product_by_id(request, id):
     if 'search_filter' in request.GET:
         search = request.GET['search_filter']
@@ -78,6 +76,5 @@ def get_product_by_id(request, id):
         } for x in Product.objects.filter(name__icontains=search)]
         return JsonResponse({'data': products})
     return render(request, 'home/product_details.html', {
-        'products': get_object_or_404(Product, pk=id )
-
+        'products': get_object_or_404(Product, pk=id)
     })

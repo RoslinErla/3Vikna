@@ -84,7 +84,7 @@ def delete_product(request, id):
 
 
 def update_product(request, id):
-    instance= get_object_or_404(Product, pk=id)
+    instance = get_object_or_404(Product, pk=id)
 
     if request.method == 'POST':
         form = ProductUpdateForm(data=request.POST, instance=instance)
