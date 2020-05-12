@@ -41,11 +41,13 @@ iss 2: only three people can view webpage at the same time.
 
 Productive day. Css page is in process of group effort of development. Team members had been working on a design colouring aspect of the the web page. Great effort. 
 
-Day 10
+Day 10 pyCharm psycopg2 error problem
 
-Day 11
+Day 11 pyCharm psycopg2 error problem
 
-Day 12 
+Day 12 pyCharm psycopg2 error problem
 
-Day 13 
+Day 13 pyCharm psycopg2 error problem fixed
+
+Day 14 Attempt of production functionality addition
 
