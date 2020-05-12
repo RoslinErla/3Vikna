@@ -2,22 +2,30 @@ from django.core.exceptions import ValidationError
 from django.forms import ModelForm, widgets
 from cart.models import Checkout
 from django import forms
+import datetime
+from datetime import datetime
 
-city_choices = [('1', 'Reykjavík'), ('2', 'Seltjarnarnes'), ('3', 'Vogar'), ('4', 'Kópavogur'), ('5', 'Garðabær'),
-                ('6', 'Hafnarfjörður'), ('7', 'Álftanes'), ('8', 'Reykjanesbær'), ('9', 'Grindavík'), ('10', 'Sandgerði'),
-                ('11', 'Garður'), ('12', 'Mosfellsbær'), ('13', 'Akranes'), ('14', 'Borgarnes'), ('15', 'Reykholt'),
-                ('16', 'Stykkishólmur'), ('17', 'Grundarfjörður'), ('18', 'Ólafsvík'), ('19', 'Snæfellsbær'),
-                ('20', 'Hellissandur'), ('21', 'Búðardalur'), ('22', 'Reykhólahreppur'), ('23', 'Ísafjörður'),
-                ('24', 'Bolungarvík'), ('25', 'Súðavík'), ('26', 'Patreksfjörður'), ('27', 'Tálknafjörður'),
-                ('28', 'Hólmavík'), ('29', 'Drangsnes'), ('30', 'Hvammstangi'), ('31', 'Blönduós'), ('32', 'Skagaströnd'),
-                ('33', 'Sauðárkrókur'), ('34', 'Varmahlíð'), ('35', 'Hofsós'), ('36', 'Siglufjörður'), ('37', 'Akureyri'),
-                ('38', 'Grenivík'), ('39', 'Grímsey'), ('40', 'Dalvík'), ('41', 'Ólafsfjörður'), ('42', 'Hrísey'),
-                ('43', 'Húsavík'), ('44', 'Fosshóll'), ('45', 'Laugar'), ('46', 'Mývatn'), ('47', 'Kópasker'),
-                ('48', 'Raufarhöfn'), ('49', 'Þórshöfn'), ('50', 'Bakkafjörður'), ('51', 'Vopnafjörður'),
-                ('52', 'Egilsstaðir'), ('53', 'Seyðisfjörður'), ('54', 'Borgarfjörður eystri'), ('55', 'Reyðarfjörður'),
-                ('56', 'Eskifjörður'), ('57', 'Neskaupstaður'), ('58', 'Fáskrúðsfjörður'), ('59', 'Breiðdalsvík'),
-                ('60', 'Djúpivogur'), ('61', 'Höfn'), ('62', 'Selfoss'), ('63', 'Hveragerði'), ('64', 'Þorlákshöfn'),
-                ('65', 'Hella'), ('66', 'Hvolsvöllur'), ('67', 'Vík'), ('68', 'Kirkjubæjarklaustur'), ('69', 'Vestmannaeyjar')]
+
+city_choices = [('Reykjavík', 'Reykjavík'), ('Seltjarnarnes', 'Seltjarnarnes'), ('Vogar', 'Vogar'), ('Kópavogur', 'Kópavogur'),
+                ('Garðabær', 'Garðabær'), ('Hafnarfjörður', 'Hafnarfjörður'), ('Álftanes', 'Álftanes'), ('Reykjanesbær', 'Reykjanesbær'),
+                ('Grindavík', 'Grindavík'), ('Sandgerði', 'Sandgerði'), ('Garður', 'Garður'), ('Mosfellsbær', 'Mosfellsbær'),
+                ('Akranes', 'Akranes'), ('Borgarnes', 'Borgarnes'), ('Reykholt', 'Reykholt'), ('Stykkishólmur', 'Stykkishólmur'),
+                ('Grundarfjörður', 'Grundarfjörður'), ('Ólafsvík', 'Ólafsvík'), ('Snæfellsbær', 'Snæfellsbær'),
+                ('Hellissandur', 'Hellissandur'), ('Búðardalur', 'Búðardalur'), ('Reykhólahreppur', 'Reykhólahreppur'),
+                ('Ísafjörður', 'Ísafjörður'), ('Bolungarvík', 'Bolungarvík'), ('Súðavík', 'Súðavík'),
+                ('Patreksfjörður', 'Patreksfjörður'), ('Tálknafjörður', 'Tálknafjörður'), ('Hólmavík', 'Hólmavík'),
+                ('Drangsnes', 'Drangsnes'), ('Hvammstangi', 'Hvammstangi'), ('Blönduós', 'Blönduós'), ('Skagaströnd', 'Skagaströnd'),
+                ('Sauðárkrókur', 'Sauðárkrókur'), ('Varmahlíð', 'Varmahlíð'), ('Hofsós', 'Hofsós'), ('Siglufjörður', 'Siglufjörður'),
+                ('Akureyri', 'Akureyri'), ('Grenivík', 'Grenivík'), ('Grímsey', 'Grímsey'), ('Dalvík', 'Dalvík'),
+                ('Ólafsfjörður', 'Ólafsfjörður'), ('Hrísey', 'Hrísey'), ('Húsavík', 'Húsavík'), ('Fosshóll', 'Fosshóll'),
+                ('Laugar', 'Laugar'), ('Mývatn', 'Mývatn'), ('Kópasker', 'Kópasker'), ('Raufarhöfn', 'Raufarhöfn'),
+                ('Þórshöfn', 'Þórshöfn'), ('Bakkafjörður', 'Bakkafjörður'), ('Vopnafjörður', 'Vopnafjörður'),
+                ('Egilsstaðir', 'Egilsstaðir'), ('Seyðisfjörður', 'Seyðisfjörður'), ('Borgarfjörður eystri', 'Borgarfjörður eystri'),
+                ('Reyðarfjörður', 'Reyðarfjörður'), ('Eskifjörður', 'Eskifjörður'), ('Neskaupstaður', 'Neskaupstaður'),
+                ('Fáskrúðsfjörður', 'Fáskrúðsfjörður'), ('Breiðdalsvík', 'Breiðdalsvík'), ('Djúpivogur', 'Djúpivogur'),
+                ('Höfn', 'Höfn'), ('Selfoss', 'Selfoss'), ('Hveragerði', 'Hveragerði'), ('Þorlákshöfn', 'Þorlákshöfn'),
+                ('Hella', 'Hella'), ('Hvolsvöllur', 'Hvolsvöllur'), ('Vík', 'Vík'), ('Kirkjubæjarklaustur', 'Kirkjubæjarklaustur'),
+                ('Vestmannaeyjar', 'Vestmannaeyjar')]
 
 
 class CheckoutForm(ModelForm):
@@ -30,6 +38,13 @@ class CheckoutForm(ModelForm):
                 raise ValidationError("The name can't contain a number")
 
         return Name_of_cardholder
+
+    def clean_Postal_code(self):
+        Postal_code = self.cleaned_data['Postal_code']
+
+        if Postal_code < 100 or Postal_code > 902:
+            raise ValidationError("Not a valid postal code")
+        return Postal_code
 
     def clean_Full_name(self):
         Full_name = self.cleaned_data['Full_name']
@@ -54,6 +69,17 @@ class CheckoutForm(ModelForm):
             raise ValidationError("This is not a valid cvc")
 
         return CVC
+
+    def clean_Expiration_date(self):
+        Expiration_date = self.cleaned_data['Expiration_date']
+        date = datetime.strptime(Expiration_date, '%Y-%m-%d')
+        print(date)
+        if date < datetime.now():
+            raise ValidationError("This card has expired")
+
+        return Expiration_date
+
+
 
     Full_name = forms.CharField(label='Full name', required=True, widget=forms.TextInput(attrs={'class': 'form-control'}))
     Address = forms.CharField(label='Address', required=True, widget=forms.TextInput(attrs={'class': 'form-control'}))

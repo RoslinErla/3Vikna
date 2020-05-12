@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Read only review</h1>
+    {% for elements in information %}
+        <p>Full name: {{ elements.Full_name }}</p>
+        <p>Address: {{ elements.Address }}</p>
+        <p>City: {{ elements.City }}</p>
+        <p>Postal code: {{ elements.Postal_code }}</p>
+        <p>Name of cardholder: {{ elements.Name_of_cardholder }}</p>
+        <p>Card Number: {{ elements.Card_number }}</p>
+        <p>Expiration date: {{ elements.Expiration_date }}</p>
+        <p>CVC: ***</p>
+    {% endfor %}
+
+    <a class="nav-link" href="{% url 'checkout' %}">
+        <button class="back-button" type="button">Back to checkout</button>
+    </a>
+    <a class="nav-link" href="">
+        <button class="btn btn-primary" type="button">Pay</button>
+    </a>
+{% endblock %}

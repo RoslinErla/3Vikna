@@ -1,6 +1,7 @@
 from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from AllProducts.models import Product
+from cart.models import Cart
 
 # Create your views here.
 from cart.forms.checkout_form import CheckoutForm
@@ -22,25 +23,40 @@ def index(request):
 
 def add_to_cart(request, id):
     # cart = user = (user=User.findbyid(request.user.id), product=product.findby(id))
-    return render(request, 'home/product_details.html', {
-        'products': get_object_or_404(Product, pk=id)
-    })
+    if request.user.is_authenticated:
+        user = request.user.id
+        cart = Cart(product_id=id, user_id=user)
+        cart.save()
+        return redirect('cart-index')
+    else:
+        return redirect('login')
+
+
+def cart(request):
+    context = {'products': Cart.objects.filter(user_id=request.user.id)}
+    return render(request, 'cart/cart-index.html', context)
 
 
 def checkout(request):
-    User = request.user.id
+    user = request.user.id
     if request.method == 'POST':
         form = CheckoutForm(data=request.POST)
         if form.is_valid():
             checkout = Checkout(Full_name=request.POST['Full_name'], Address=request.POST['Address'], City=request.POST['City'],
                                 Postal_code=request.POST['Postal_code'], Name_of_cardholder=request.POST['Name_of_cardholder'],
                                 Card_number=request.POST['Card_number'], Expiration_date=request.POST['Expiration_date'],
-                                CVC=request.POST['CVC'], User_id=User)
+                                CVC=request.POST['CVC'], User_id=user)
             checkout.save()
-            return redirect('home-index')
+            return redirect('read-only')
     else:
         form = CheckoutForm()
 
     return render(request, 'cart/checkout.html', {
         'form': form
     })
+
+
+def read_only_review(request):
+    user = request.user.id
+    context = {'information': Checkout.objects.filter(User_id=user)}
+    return render(request, 'cart/read_only.html', context)
