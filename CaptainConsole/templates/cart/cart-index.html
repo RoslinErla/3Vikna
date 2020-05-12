@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Cart</h2>
+
+    <br>
+
+    <div class = "products">
+        {% for product in products %}
+            {% include 'cart/index.html' with product=product %}
+        {% endfor %}
+    </div>
+
+    <div class="total-cart">
+        <p class="total-paragraph">Total</p>
+        <p class="total-price">4000isk</p>
+    </div>
+
+    <div class="bottom-buttons">
+            <a class="nav-link" href="{% url 'home-index' %}">
+            <button class="back-button" type="button">Continue Shopping</button>
+            </a>
+
+            <a class="nav-link" href="">
+            <button class="btn btn-primary" type="button">Purchase</button>
+            </a>
+    </div>
+    <br>
+
+<br>
+
+{% endblock %}
