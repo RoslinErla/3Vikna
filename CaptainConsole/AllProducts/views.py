@@ -18,6 +18,7 @@ def index(request):
         } for x in Product.objects.filter(name__icontains=search)]
         return JsonResponse({'data': products})
     context = {'products': Product.objects.all().order_by('name')}
+    print(context)
     return render(request, 'allProducts/index.html', context)
 
 

@@ -204,13 +204,17 @@ footer #nintendo {
 
 }
 
-
-
 .checkbox {
     display: block;
 }
 
+.back-button {
+    display: inline-block;
+}
 
+.btn-primary {
+    display: inline-block;;
+}
 
 
 @media screen and (min-width: 992px) and (max-width: 1080px)  {
@@ -237,8 +241,5 @@ footer #nintendo {
         display: inline-block;
 
     }
-
-
-
 }
 
