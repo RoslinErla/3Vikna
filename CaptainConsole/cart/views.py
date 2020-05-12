@@ -59,4 +59,12 @@ def checkout(request):
 def read_only_review(request):
     user = request.user.id
     context = {'information': Checkout.objects.filter(User_id=user)}
+    context2 = {'products': Cart.objects.filter(user_id=user)}
     return render(request, 'cart/read_only.html', context)
+
+
+def success(request):
+    user = request.user.id
+    checkout = get_object_or_404(Checkout, User_id=user)
+    checkout.delete()
+    return render(request, 'cart/Success.html')

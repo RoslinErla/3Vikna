@@ -6,10 +6,14 @@ urlpatterns = [
     path('price/', views.index2, name="allProducts-index2"),
     path('nintendo/', views.index3, name="allProducts-index3"),
     path('atari/', views.index4, name="allProducts-index4"),
-    path('sega_genesis/', views.index5, name="allProducts-index5"),
+    path('sega/', views.index5, name="allProducts-index5"),
     path('playstation/', views.index6, name="allProducts-index6"),
     path('<int:id>', views.get_product_by_id, name="allProduct_details"),
     path('create_product/', views.create_product, name="create_product"),
     path('delete_product/<int:id>', views.delete_product, name="delete_product"),
-    path('update_product/<int:id>', views.update_product, name="update_product")
+    path('update_product/<int:id>', views.update_product, name="update_product"),
+    path('atari/price/', views.index7, name='allproducts-atari-sorted-price'),
+    path('nintendo/price', views.index8, name='allproducts-nintendo-sorted-price'),
+    path('playstation/price', views.index9, name='allproducts-playstation-sorted-price'),
+    path('sega/price', views.index10, name='allproducts-sega-sorted-price')
 ]

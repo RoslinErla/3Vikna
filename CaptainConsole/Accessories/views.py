@@ -27,22 +27,22 @@ def index2(request):
 
 def index3(request):
     context = {'products': Product.objects.filter(type='Accessories').filter(manufacturer__icontains='Nintendo')}
-    return render(request, 'accessories/index.html', context)
+    return render(request, 'accessories/nintendo.html', context)
 
 
 def index4(request):
     context = {'products': Product.objects.filter(type='Accessories').filter(manufacturer__icontains='Atari')}
-    return render(request, 'accessories/index.html', context)
+    return render(request, 'accessories/atari.html', context)
 
 
 def index5(request):
     context = {'products': Product.objects.filter(type='Accessories').filter(manufacturer__icontains='sega')}
-    return render(request, 'accessories/index.html', context)
+    return render(request, 'accessories/sega.html', context)
 
 
 def index6(request):
     context = {'products': Product.objects.filter(type='Accessories').filter(manufacturer__icontains='playstation')}
-    return render(request, 'accessories/index.html', context)
+    return render(request, 'accessories/playstation.html', context)
 
 
 def index7(request):

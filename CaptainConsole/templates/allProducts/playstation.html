@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h2>Consoles</h2>
+    <h2>All Products</h2>
 
     <div class="dropdown show">
         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -8,7 +8,7 @@
 
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
             <a class="dropdown-item" href={% url "consoles-index6" %}>Name</a>
-            <a class="dropdown-item" href="{% url "playstation-sorted-price" %}">Price</a>
+            <a class="dropdown-item" href="{% url "allproducts-playstation-sorted-price" %}">Price</a>
         </div>
 
     </div>

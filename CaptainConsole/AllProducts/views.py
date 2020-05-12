@@ -28,23 +28,42 @@ def index2(request):
 
 
 def index3(request):
-    context = {'products': Product.objects.filter(manufacturer__icontains="Nintendo")}
-    return render(request, 'allProducts/index.html', context)
+    context = {'products': Product.objects.filter(manufacturer__icontains="Nintendo").order_by('name')}
+    return render(request, 'allProducts/nintendo.html', context)
 
 
 def index4(request):
-    context = {'products': Product.objects.filter(manufacturer__icontains="Atari")}
-    return render(request, 'allProducts/index.html', context)
+    context = {'products': Product.objects.filter(manufacturer__icontains="Atari").order_by('name')}
+    return render(request, 'allProducts/atari.html', context)
 
 
 def index5(request):
-    context = {'products': Product.objects.filter(manufacturer__icontains="Sega")}
-    return render(request, 'allProducts/index.html', context)
+    context = {'products': Product.objects.filter(manufacturer__icontains="Sega").order_by('name')}
+    return render(request, 'allProducts/sega.html', context)
 
 
 def index6(request):
-    context = {'products': Product.objects.filter(manufacturer__icontains="Playstation")}
-    return render(request, 'allProducts/index.html', context)
+    context = {'products': Product.objects.filter(manufacturer__icontains="Playstation").order_by('name')}
+    return render(request, 'allProducts/playstation.html', context)
+
+def index7(request):
+    context = {'products': Product.objects.filter(manufacturer__icontains='Atari').order_by('price')}
+    return render(request, 'allProducts/atari.html', context)
+
+
+def index8(request):
+    context = {'products': Product.objects.filter(manufacturer__icontains='Nintendo').order_by('price')}
+    return render(request, 'allProducts/nintendo.html', context)
+
+
+def index9(request):
+    context = {'products': Product.objects.filter(manufacturer__icontains='playstation').order_by('price')}
+    return render(request, 'allProducts/playstation.html', context)
+
+
+def index10(request):
+    context = {'products': Product.objects.filter(manufacturer__icontains='sega').order_by('price')}
+    return render(request, 'allProducts/sega.html', context)
 
 
 def get_product_by_id(request, id):
