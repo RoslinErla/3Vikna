@@ -45,6 +45,26 @@ def index6(request):
     return render(request, 'accessories/index.html', context)
 
 
+def index7(request):
+    context = {'products': Product.objects.filter(type='Accessories').filter(manufacturer__icontains='Atari').order_by('price')}
+    return render(request, 'accessories/atari.html', context)
+
+
+def index8(request):
+    context = {'products': Product.objects.filter(type='Accessories').filter(manufacturer__icontains='Nintendo').order_by('price')}
+    return render(request, 'accessories/nintendo.html', context)
+
+
+def index9(request):
+    context = {'products': Product.objects.filter(type='Accessories').filter(manufacturer__icontains='playstation').order_by('price')}
+    return render(request, 'accessories/playstation.html', context)
+
+
+def index10(request):
+    context = {'products': Product.objects.filter(type='Accessories').filter(manufacturer__icontains='sega').order_by('price')}
+    return render(request, 'accessories/sega.html', context)
+
+
 def get_product_by_id(request, id):
     if 'search_filter' in request.GET:
         search = request.GET['search_filter']
