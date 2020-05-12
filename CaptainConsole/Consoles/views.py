@@ -16,6 +16,7 @@ def index(request):
             'firstImage': x.productimage_set.first().image
         } for x in Product.objects.filter(name__icontains=search)]
         return JsonResponse({'data': products})
+
     context = {'products': Product.objects.filter(type='Consoles').order_by('name')}
     return render(request, 'consoles/index.html', context)
 
@@ -27,22 +28,42 @@ def index2(request):
 
 def index3(request):
     context = {'products': Product.objects.filter(type='Consoles').filter(manufacturer__icontains='Nintendo')}
-    return render(request, 'consoles/index.html', context)
+    return render(request, 'consoles/nintendo.html', context)
 
 
 def index4(request):
     context = {'products': Product.objects.filter(type='Consoles').filter(manufacturer__icontains='Atari')}
-    return render(request, 'consoles/index.html', context)
+    return render(request, 'consoles/atari.html', context)
 
 
 def index5(request):
     context = {'products': Product.objects.filter(type='Consoles').filter(manufacturer__icontains='sega')}
-    return render(request, 'consoles/index.html', context)
+    return render(request, 'consoles/sega.html', context)
 
 
 def index6(request):
-    context = {'products': Product.objects.filter(type='Consoles').filter(manufacturer__icontains='playstation')}
-    return render(request, 'consoles/index.html', context)
+    context = {'products': Product.objects.filter(type='Consoles').filter(manufacturer__icontains='playstation').order_by('name')}
+    return render(request, 'consoles/playstation.html', context)
+
+
+def index7(request):
+    context = {'products': Product.objects.filter(type='Consoles').filter(manufacturer__icontains='Atari').order_by('price')}
+    return render(request, 'consoles/atari.html', context)
+
+
+def index8(request):
+    context = {'products': Product.objects.filter(type='Consoles').filter(manufacturer__icontains='playstation').order_by('price')}
+    return render(request, 'consoles/playstation.html', context)
+
+
+def index9(request):
+    context = {'products': Product.objects.filter(type='Consoles').filter(manufacturer__icontains='sega').order_by('price')}
+    return render(request, 'consoles/sega.html', context)
+
+
+def index10(request):
+    context = {'products': Product.objects.filter(type='Consoles').filter(manufacturer__icontains='playstation').order_by('price')}
+    return render(request, 'consoles/nintendo.html', context)
 
 
 def get_product_by_id(request, id):
