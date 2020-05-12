@@ -1,50 +1,12 @@
-{% extends 'base.html' %}
-{% block content %}
-
-<div class="cart">
-    <h2 class="cart-header">Cart</h2>
-            <div class="all-items">
-                    <div class="cart-item-info">
-                        <img class="cart-item-image" src="https://d3nt9em9l1urz8.cloudfront.net/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/i/m/img_6277.jpg" width="100" height="100">
-                        &emsp;
-                        <p class="cart-item-title">Pop Funko! Pikachu</p>
-                        &emsp;
-                        <span class="price">2000isk</span>
-                        &emsp;
-                        <input class="cart-quantity" type="number" value="1">
-                        &emsp;
-                        <button class="remove-button" type="button">X</button>
-                    </div>
-                  <div class="cart-item-info">
-                        <img class="cart-item-image" src="" width="100" height="100">
-                        &emsp;
-                        <p class="cart-item-title">Pop Funko! Bulbasaur</p>
-                        &emsp;
-                        <span class="price">2000isk</span>
-                        &emsp;
-                        <input class="cart-quantity" type="number" value="1">
-                        &emsp;
-                        <button class="remove-button" type="button">X</button>
-                    </div>
-
-            </div>
-
-            <div class="total-cart">
-                <p class="total-paragraph">Total</p>
-                <p class="total-price">4000isk</p>
-            </div>
-
-            <div class="bottom-buttons">
-            <a class="nav-link" href="{% url 'home-index' %}">
-            <button class="back-button" type="button">Continue Shopping</button>
-            </a>
-            <a class="nav-link" href="">
-            <button class="btn btn-primary" type="button">Purchase</button>
-            </a>
-            </div>
-            <br>
-
-<br>
+<div class="one product">
+    <img class="product-image" src="{{ product.productimage_set.first.image }}" width="100" height="100">
+    &emsp;
+    <p>{{ product.name }}</p>
+    &emsp;
+    <p>1000isk</p>
+    &emsp;
+    <input class="cart-quantity" type="number" value="1">
+    &emsp;
+    <button class="remove-button" type="button">X</button>
 </div>
 
-{% endblock %}

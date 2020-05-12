@@ -1,6 +1,7 @@
 from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from AllProducts.models import Product
+from cart.models import Cart
 
 # Create your views here.
 from cart.forms.checkout_form import CheckoutForm
@@ -22,9 +23,18 @@ def index(request):
 
 def add_to_cart(request, id):
     # cart = user = (user=User.findbyid(request.user.id), product=product.findby(id))
-    return render(request, 'home/product_details.html', {
-        'products': get_object_or_404(Product, pk=id)
-    })
+    if request.user.is_authenticated:
+        user = request.user.id
+        cart = Cart(product_id=id, user_id=user)
+        cart.save()
+        return redirect('cart-index')
+    else:
+        return redirect('login')
+
+
+def cart(request):
+    context = {'products': Cart.objects.filter(user_id=request.user.id)}
+    return render(request, 'cart/cart-index.html', context)
 
 
 def checkout(request):
