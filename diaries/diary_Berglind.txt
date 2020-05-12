@@ -81,4 +81,5 @@ Helgin 9 - 10.maí:
 Dagur 15 - 11.maí
 	Hittumst á discord og fórum yfir hluti. Hittum aðstoðarkennara kl 12 og annan aðstoðarkennara til að hjálpa okkur. 
 	Bjó til media queries í css til að síðan líti vel út við mismunandi skjástærðir. 
+	Reyndi að breyta sort og filter by þannig að bæði virkaði, s.s að filter-a fyrst og svo sort-era by price/name. 
 

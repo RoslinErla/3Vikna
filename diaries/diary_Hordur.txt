@@ -1,5 +1,6 @@
 4/27/20
-Watched the video lectures for this course. Set up some of the tools we'll be using on my personal computer. Got familiar with git again.
+Watched the video lectures for this course. Set up some of the tools we'll be using on my personal computer. Got familiar with git 
+again.
 Worked on the requirement analysis report, with a focus on the requirement list.
 
 4/28/20
@@ -8,17 +9,36 @@ with finishing writing down all the interview questions, Created some use cases 
 friend with the questions we created, putting his answers down and then writing it into the report. 
 
 4/29/20
-Spell checked the requirement analysis report and added the final touches to it with the other team members, Started working on the design report going over a bit of the UI design and made some interview questions.
+Spell checked the requirement analysis report and added the final touches to it with the other team members, Started working on the
+design report going over a bit of the UI design and made some interview questions.
 
 4/30/20
-Finished setting up the interview questions for the think-aloud interviews and took one interview with a person, the group began working more on the design report after we had finished the requirement analysis report. I helped with the class diagram with the group and then put up the prototypes so everything would go smoothly when every member took their interviews for the website.
+Finished setting up the interview questions for the think-aloud interviews and took one interview with a person, the group began working
+more on the design report after we had finished the requirement analysis report. I helped with the class diagram with the group and then
+put up the prototypes so everything would go smoothly when every member took their interviews for the website.
 
 5/1/20
-Worked a bit on the introdcution and the programming rules with the other team member and I went over the think aloud interviews to make a summary out of them.
+Worked a bit on the introdcution and the programming rules with the other team member and I went over the think aloud interviews to make
+a summary out of them.
 
 5/4/20
 Helped a team member with putting up virtual env and Django, created fill.sql stuff for the website. 
 
 5/5/20
-Found images for merch products to be used on the site, worked on the css and html code, worked with the team members online together on the css and html code to decide how the web page would look.
+Found images for merch products to be used on the site, worked on the css and html code, worked with the team members online together on
+the css and html code to decide how the web page would look.
 
+6/5/20
+Found images for merch products to be used on the site, worked on the css code, worked with the team members
+online together working more on the css code too decide how the web page would look like.
+
+7/5/20
+Went over what functionality we needed to work on for the page. Worked on code for the cart.
+
+8/5/20
+Worked on the code for the cart. Fixed font sizes, added button to products on site to add the product into the cart, helped with fixing
+the database a bit.
+
+11/5/20
+finally fixed a very boring bug that I had been trying to fix during the weekend. Helped finding bugs for the search bar in the
+navigation bar, changed code for some buttons and the banner/header.
