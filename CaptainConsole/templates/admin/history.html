@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h4>This is your search history</h4>
+    {% for elements in products %}
+        <p>{{ elements.id }}</p>
+    {% endfor %}
+{% endblock %}
