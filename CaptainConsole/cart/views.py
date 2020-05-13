@@ -34,7 +34,9 @@ def add_to_cart(request, id):
     # cart = user = (user=User.findbyid(request.user.id), product=product.findby(id))
     if request.user.is_authenticated:
         user = request.user.id
-        if Cart.objects.filter(product_id=id, user_id=user).first() != None:
+        object = Cart.objects.filter(product_id=id, user_id=user).first()
+        if object != None:
+            object.quantity += 1
             return redirect('cart-index')
 
         cart = Cart(product_id=id, user_id=user)
@@ -55,6 +57,12 @@ def cart(request):
         } for x in Product.objects.filter(name__icontains=search)]
         return JsonResponse({'data': products})
     context = {'products': Cart.objects.filter(user_id=request.user.id)}
+    total_price = 0
+    product_list = []
+    for o in context['products']:
+        product_list.append(Product.objects.filter(id=o.product_id).first())
+        total_price += Product.objects.filter(id=o.product_id).first().price
+    context = {'products': product_list, 'total': total_price}
     return render(request, 'cart/cart-index.html', context)
 
 
@@ -94,3 +102,4 @@ def success(request):
     checkout = get_object_or_404(Checkout, User_id=user)
     checkout.delete()
     return render(request, 'cart/Success.html')
+
