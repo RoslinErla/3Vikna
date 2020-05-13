@@ -28,20 +28,12 @@ def register(request):
 
 def profile(request):
     profile = Profile.objects.filter(user=request.user).first()
-    user = User.objects.filter(id=request.user.id)
     if request.method == 'POST':
         form = ProfileForm(instance=profile, data=request.POST)
         if form.is_valid():
-            user.profile.profile_image = request.POST['image']
             profile = form.save(commit=False)
             profile.user = request.user
-
-            user = User(first_name=request.POST['first_name'],
-                        last_name=request.POST['last_name'],
-                        email=request.POST['email'],
-                        id=request.user.id)
             profile.save()
-            user.save()
             return redirect('profile')
 
     return render(request, 'admin/profile.html', {
