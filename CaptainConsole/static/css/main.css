@@ -52,12 +52,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-.nav-item{
+.nav-item {
     border-right-color: lightblue;
     border-right-style: solid;
 
 }
-.nav-item .nav-link{
+.nav-item .nav-link {
     font-size: 20px;
     color: black;
 }
@@ -248,6 +248,9 @@ footer #nintendo {
 
     #signup {
         height: 5%;
+        font-size: 15px;
+    }
+    .nav-item .nav-link {
         font-size: 15px;
     }
 
