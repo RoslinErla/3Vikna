@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
     <h4>Products we recommend</h4>
+    <br>
     <div class = "products">
         {% for product in products %}
             {% include 'home/single_product.html' with product=product %}

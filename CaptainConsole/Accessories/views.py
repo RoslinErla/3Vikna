@@ -159,8 +159,10 @@ def get_product_by_id(request, id):
         return JsonResponse({'data': products})
     if request.user.is_authenticated:
         user = request.user.id
-        search = Search(product_id=id, user_id=user)
-        search.save()
+        already_there = Search.objects.filter(product_id=id)
+        if not already_there:
+            search = Search(product_id=id, user_id=user)
+            search.save()
     return render(request, 'home/product_details.html', {
         'products': get_object_or_404(Product, pk=id )
 

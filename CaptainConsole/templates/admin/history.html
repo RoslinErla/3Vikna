@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
     <h4>This is your browsing history</h4>
+    <br>
     <div class = "products">
     {% for elements in products %}
         {% include 'allProducts/single_product.html' with product=elements %}
