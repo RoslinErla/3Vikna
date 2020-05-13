@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    <p>{{ User.username }}</p>
+    <h4>Your username: {{ request.user.username }}</h4>
     <form class="form form-horizontal" method="post">
         {% csrf_token %}
         {{ form }}

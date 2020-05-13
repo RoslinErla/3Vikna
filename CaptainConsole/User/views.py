@@ -8,6 +8,7 @@ from User.forms.profile_form import ProfileForm
 from User.forms.forms import NewUserForm
 from User.models import Profile
 from Search.models import Search
+from AllProducts.models import Product
 
 
 def register(request):
@@ -31,10 +32,11 @@ def profile(request):
     if request.method == 'POST':
         form = ProfileForm(instance=profile, data=request.POST)
         if form.is_valid():
+            user.profile.profile_image = request.POST['image']
             profile = form.save(commit=False)
             profile.user = request.user
 
-            user = User(instance=user, first_name=request.POST['first_name'],
+            user = User(first_name=request.POST['first_name'],
                         last_name=request.POST['last_name'],
                         email=request.POST['email'],
                         id=request.user.id)
@@ -50,6 +52,10 @@ def profile(request):
 def browsing_history(request):
     user = request.user.id
     context = {'products': Search.objects.filter(user_id=user)}
+    context_list = list()
+    for objects in context['products']:
+        context_list.append(Product.objects.filter(id=objects.product_id).first())
+    context = {'products': context_list}
     return render(request, 'admin/history.html', context)
 
 

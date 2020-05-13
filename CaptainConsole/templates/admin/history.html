@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h4>This is your search history</h4>
+    <h4>This is your browsing history</h4>
     {% for elements in products %}
-        <p>{{ elements.id }}</p>
+        {% include 'allProducts/single_product.html' with product=elements %}
     {% endfor %}
 {% endblock %}

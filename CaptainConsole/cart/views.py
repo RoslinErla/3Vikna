@@ -34,6 +34,9 @@ def add_to_cart(request, id):
     # cart = user = (user=User.findbyid(request.user.id), product=product.findby(id))
     if request.user.is_authenticated:
         user = request.user.id
+        if Cart.objects.filter(product_id=id, user_id=user).first() != None:
+            return redirect('cart-index')
+
         cart = Cart(product_id=id, user_id=user)
         cart.save()
         return redirect('cart-index')
@@ -76,8 +79,13 @@ def checkout(request):
 
 def read_only_review(request):
     user = request.user.id
-    context = {'information': Checkout.objects.filter(User_id=user)}
     context2 = {'products': Cart.objects.filter(user_id=user)}
+    product_list = list()
+    for elements in context2['products']:
+        product_list.append(Product.objects.filter(id=elements.product_id).first())
+
+    context = {'information': Checkout.objects.filter(User_id=user), 'products': product_list}
+
     return render(request, 'cart/read_only.html', context)
 
 
