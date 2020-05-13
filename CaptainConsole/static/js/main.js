@@ -13,6 +13,7 @@ $(document).ready(function(){
                                     <img class="product-image" src="${d.firstImage}"/>
                                     <h4>${d.name}</h4>
                                     <p>${d.price} isk</p>
+                                    <a href = "cart/add_to_cart/${d.id}" class = "add-to-cart-btn" type="button">Add to Cart</a>
                                 </a>
                             </div>`
                 });
@@ -21,6 +22,10 @@ $(document).ready(function(){
                 $('h2').empty()
                 $('.product-details').remove()
                 $('.show').empty()
+                $('.total-cart').empty()
+                $('.back-button').remove()
+                $('#purchase').remove()
+                $('.products').empty()
                 $('.products').html(newHtml.join(''));
                 $('#search-box').val();
             },
