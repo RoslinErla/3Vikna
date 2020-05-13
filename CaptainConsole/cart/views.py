@@ -40,7 +40,7 @@ def add_to_cart(request, id):
             return redirect('cart-index')
 
 
-        cart = Cart(product_id=id, user_id=user)
+        cart = Cart(product_id=id, user_id=user, quantity=1)
         cart.save()
         return redirect('cart-index')
     else:
