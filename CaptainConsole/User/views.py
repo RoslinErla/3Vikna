@@ -1,5 +1,6 @@
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+from django.http import JsonResponse
 
 from User.models import Profile
 from django.shortcuts import render, redirect
@@ -27,6 +28,15 @@ def register(request):
 
 
 def profile(request):
+    if 'search_filter' in request.GET:
+        search = request.GET['search_filter']
+        products = [{
+            'id': x.id,
+            'name': x.name,
+            'price': x.price,
+            'firstImage': x.productimage_set.first().image
+        } for x in Product.objects.filter(name__icontains=search)]
+        return JsonResponse({'data': products})
     profile = Profile.objects.filter(user=request.user).first()
     if request.method == 'POST':
         form = ProfileForm(instance=profile, data=request.POST)
