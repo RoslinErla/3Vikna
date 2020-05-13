@@ -90,7 +90,9 @@ Dagur 16 - 12.maí
 
 
 Dagur 17 - 13. maí 
-	Hittumst á discord og fórum yfir það sem búið var að gera og það sem var eftir. 
+	Hittumst á discord og fórum yfir það sem búið var að gera og það sem var eftir. "Hittum" tvo aðstoðarkennara, sem hjálpuðu okkur að skilja ákveðna hluti og svo Óla sem er yfir tölvunarfræðinni 
+	á Akureyri, á Discord. 
+	Ég lagaði aðeins media queries og layout-ið á síðunni. 
 
 
 
