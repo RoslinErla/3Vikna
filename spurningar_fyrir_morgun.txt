@@ -1,16 +1,9 @@
-Spurningar fyrir yfirferðarkennara
-
 * Hvernig fæ ég upplýsingarnar til að haldast inni ef ég fer fram og til baka í checkout
 
 * Vil ná í allt heila klabbið úr database og sýna korta upplýsingar flottar (1234-1234) og sýna bara síðustu 
 	4 stafi annað er stjörnumerkt (****-****-****-1234)
 
-*langar að geta bæði sýnt vörur og checkout upplýsingar þrátt fyrir að það sé í 2 töflum
- þyrftum að nota object.filter 2x.
 
-*edit í profile. Hvernig finn ég userinn og breyti honum en ekki bý til nýjan. Held ég geti bara verið með 1
-	instance?
 
-*Geta farið úr einni töflu (cart) yfir í products. Í cart er bara product_id vil einnig fá allar aðrar upplýsingar
 
-*Hvernig get ég displayað username í profile. Er bara með form. Líklegast spurning tengd að hafa 2 object.filter
+
