@@ -83,3 +83,17 @@ Dagur 15 - 11.maí
 	Bjó til media queries í css til að síðan líti vel út við mismunandi skjástærðir. 
 	Reyndi að breyta sort og filter by þannig að bæði virkaði, s.s að filter-a fyrst og svo sort-era by price/name. 
 
+
+Dagur 16 - 12.maí 
+	Hittumst á discord og fórum yfir hluti. Reyndi að gera það þannig að ef maður er ekki skráður inn þegar ýtt er á add to cart þá er maður re-directed á login síðuna og ef maður er skráður inn
+ 	fer user_id og product_id í cart töfluna, það tókst ekki alveg. Bætti svo við nánast allri virkninni fyrir Merch og Accessories þannig að hægt sé að filter-a og gera svo sorted by. 
+
+
+Dagur 17 - 13. maí 
+	Hittumst á discord og fórum yfir það sem búið var að gera og það sem var eftir. 
+
+
+
+	
+
+
