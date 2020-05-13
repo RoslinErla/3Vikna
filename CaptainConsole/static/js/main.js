@@ -150,7 +150,7 @@ function cartItemRemover(event){
 
 function updateTotal() {
  let allItems = document.getElementsByClassName('all-items')[0]
- let singleItems = allItems.getElementsByClassName('cart-item-info')
+ let singleItems = allItems.getElementsByClassName('one-product')
  let total = 0
  for (let i = 0; i < singleItems.length; i++) {
    let singleItem = singleItems[i]
@@ -159,7 +159,9 @@ function updateTotal() {
    let price = parseFloat(itemPrice.innerText.replace('isk', ''))
    let numberQuantity = itemQuantity.value
    total = total + (price * numberQuantity)
+   console.log(price, itemQuantity, itemPrice)
  }
+
  total = Math.round(total * 100) / 100
  document.getElementsByClassName('total-price')[0].innerText = total + 'isk'
 }
