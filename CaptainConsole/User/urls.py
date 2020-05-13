@@ -8,4 +8,5 @@ urlpatterns = [
     path('logout', LogoutView.as_view(next_page='login'), name="logout"),
     path('profile', views.profile, name="profile"),
     path('history', views.browsing_history, name="browsing-history"),
+    path('<int:id>', views.get_product_by_id, name="Product_details"),
 ]

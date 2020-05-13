@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.http import JsonResponse
 
 from User.models import Profile
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
 from User.forms.profile_form import ProfileForm
 from User.forms.forms import NewUserForm
@@ -48,6 +48,21 @@ def profile(request):
 
     return render(request, 'admin/profile.html', {
         'form': ProfileForm(instance=profile)
+    })
+
+def get_product_by_id(request, id):
+    if 'search_filter' in request.GET:
+        search = request.GET['search_filter']
+        products = [{
+            'id': x.id,
+            'name': x.name,
+            'price': x.price,
+            'firstImage': x.productimage_set.first().image
+        } for x in Product.objects.filter(name__icontains=search)]
+        return JsonResponse({'data': products})
+
+    return render(request, 'home/product_details.html', {
+        'products': get_object_or_404(Product, pk=id)
     })
 
 
