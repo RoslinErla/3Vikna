@@ -7,6 +7,7 @@ from django.shortcuts import render, redirect
 from User.forms.profile_form import ProfileForm
 from User.forms.forms import NewUserForm
 from User.models import Profile
+from Search.models import Search
 
 
 def register(request):
@@ -26,15 +27,17 @@ def register(request):
 
 def profile(request):
     profile = Profile.objects.filter(user=request.user).first()
+    user = User.objects.filter(id=request.user.id)
     if request.method == 'POST':
         form = ProfileForm(instance=profile, data=request.POST)
         if form.is_valid():
             profile = form.save(commit=False)
             profile.user = request.user
-            user = User(first_name=request.POST['first_name'],
+
+            user = User(instance=user, first_name=request.POST['first_name'],
                         last_name=request.POST['last_name'],
                         email=request.POST['email'],
-                        id=request.user)
+                        id=request.user.id)
             profile.save()
             user.save()
             return redirect('profile')
@@ -42,5 +45,11 @@ def profile(request):
     return render(request, 'admin/profile.html', {
         'form': ProfileForm(instance=profile)
     })
+
+
+def browsing_history(request):
+    user = request.user.id
+    context = {'products': Search.objects.filter(user_id=user)}
+    return render(request, 'admin/history.html', context)
 
 

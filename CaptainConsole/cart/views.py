@@ -22,6 +22,15 @@ def index(request):
 
 
 def add_to_cart(request, id):
+    if 'search_filter' in request.GET:
+        search = request.GET['search_filter']
+        products = [{
+            'id': x.id,
+            'name': x.name,
+            'price': x.price,
+            'firstImage': x.productimage_set.first().image
+        } for x in Product.objects.filter(name__icontains=search)]
+        return JsonResponse({'data': products})
     # cart = user = (user=User.findbyid(request.user.id), product=product.findby(id))
     if request.user.is_authenticated:
         user = request.user.id
@@ -33,6 +42,15 @@ def add_to_cart(request, id):
 
 
 def cart(request):
+    if 'search_filter' in request.GET:
+        search = request.GET['search_filter']
+        products = [{
+            'id': x.id,
+            'name': x.name,
+            'price': x.price,
+            'firstImage': x.productimage_set.first().image
+        } for x in Product.objects.filter(name__icontains=search)]
+        return JsonResponse({'data': products})
     context = {'products': Cart.objects.filter(user_id=request.user.id)}
     return render(request, 'cart/cart-index.html', context)
 
@@ -59,4 +77,12 @@ def checkout(request):
 def read_only_review(request):
     user = request.user.id
     context = {'information': Checkout.objects.filter(User_id=user)}
+    context2 = {'products': Cart.objects.filter(user_id=user)}
     return render(request, 'cart/read_only.html', context)
+
+
+def success(request):
+    user = request.user.id
+    checkout = get_object_or_404(Checkout, User_id=user)
+    checkout.delete()
+    return render(request, 'cart/Success.html')

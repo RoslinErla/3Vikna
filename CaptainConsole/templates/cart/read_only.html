@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
     <h1>Read only review</h1>
+
     {% for elements in information %}
         <p>Full name: {{ elements.Full_name }}</p>
         <p>Address: {{ elements.Address }}</p>
@@ -15,7 +16,7 @@
     <a class="nav-link" href="{% url 'checkout' %}">
         <button class="back-button" type="button">Back to checkout</button>
     </a>
-    <a class="nav-link" href="">
+    <a class="nav-link" href="{% url 'success' %}">
         <button class="btn btn-primary" type="button">Pay</button>
     </a>
 {% endblock %}

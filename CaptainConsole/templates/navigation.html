@@ -55,8 +55,16 @@
             </div>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'allProducts-index' %}">All Products</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{% url 'allProducts-index' %}" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              All Products
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{% url 'allProducts-index4' %}">Atari</a>
+              <a class="dropdown-item" href="{% url 'allProducts-index3'%}">Nintendo</a>
+              <a class="dropdown-item" href="{% url 'allProducts-index6' %}">Playstation</a>
+              <a class="dropdown-item" href="{% url 'allProducts-index5' %}">Sega Genesis</a>
+            </div>
           </li>
 
         </ul>

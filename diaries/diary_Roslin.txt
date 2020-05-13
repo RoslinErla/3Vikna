@@ -63,8 +63,16 @@ Sá að það voru nokkrar myndir sem voru í databaseinu sem var greinilega bú
 Setti navbar upp þannig að ef þú ert loggaður inn þá kemur prófíl myndin þín í staðinn fyrir login takkann. Og skoðaði hvernig ég gæti látið upprunalega mynd alltaf vera sú sama.
 
 11.5.2020. 
-Bjó til delete og change form fyrir vörur. Breytti model í profile svo upprunalega myndin en alltaf sú sama hjá öllum. Bætti við search bar og takka sem virka alveg fullkomlega. 
+Bjó til delete og change form fyrir vörur. Breytti model í profile svo upprunalega myndin en alltaf sú sama hjá öllum. Bætti við search bar og takka sem ætti að virka alveg fullkomlega, svona þangað til annað kemur í ljós. 
 Hjálpaði með Hörð með cart. Breytti smá sign up forminu sem ég var komin með og tengdi það síðan við síðuna svo það er formið sem kemur upp ef þú ýtir á sign up.
+
+12.5.2020.
+Hjálpaði Herði/Hörð/Breka(kann að fallbeygja það) með cartið. Komumst rosa langt með það. Lookið er allavega allt komið og virknin niður í database. Ég og Berglind hjálpuðumst að við að 
+fullklára sort by og filter by dótið. Það ætti núna að virka fullkomlega allstaðar frá síðunni. Search takkinn virkar núna allstaðar frá. Bjó til search history (við gerðum það samt frekar svona eins og browsing history því þannig er
+Amazon með það). Kláraði að gera checkout formið og það virkar núna alveg fulllkomlega. Þær upplýsingar vistast niður í töflu svo það sé hægt að displaya það líka á read-only review dótinu 
+en síðan þegar þú ýtir á pay þá eyðast allar upplýsingar um þig úr gagnagrunninum svo við erum ekki að geyma kortaupplýsingar og þannig. Gerði read-only review dótið en á aðeins eftir að
+uppfæra það. Fyrsta draft er allavega til. Skrifaði niður allt það sem var eftir og óljóst svo við gætum spurt TA á morgun þegar við hittum hán. Bætti við sign up takka á login formið svo þú gætir einnig farið í
+sign up þaðan. 
 
 
 

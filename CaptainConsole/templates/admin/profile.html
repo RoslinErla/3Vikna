@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
-
+    <p>{{ User.username }}</p>
     <form class="form form-horizontal" method="post">
         {% csrf_token %}
         {{ form }}
         <br>
         <input type="submit" class="btn btn-primary" value="Update"/>
     </form>
-
+<br>
+    <a href = "{% url 'browsing-history' %}" class = "btn btn-outline-dark" type="button">Browsing History</a>
 {% endblock %}
