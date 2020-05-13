@@ -77,7 +77,10 @@ sign up þaðan.
 13.5.2020.
 Hjálpaði Herði að klára cartið og alla virkni þar inni. Breytti models í profile og cart. Núna er name í profile og cart er með quantity. Kláraði checkoutið. Það virkar núna fullkomlega og upplýsingar haldast inni á meða
 þú ert í cart pakkanum af hlutum (semsagt checkout, read_only dótið) en ef þú ferð úr cartinu eða þegar þú klárar að borga þá eyðast allar upplýsingar út. Edit profile í profile virkar núna og það sýnir einnig 
-username-ið þitt. Ef það er ekkert í körfunni þinni þá getur þú ekki ýtt á purchase takkan.  
+username-ið þitt. Ef það er ekkert í körfunni þinni þá getur þú ekki ýtt á purchase takkan.  Fór yfir kóðann og passaði að við værum t.d. alltaf að nota sömu gæsalappirnar á sömu stöðum. Þannig að allta
+þegar það var {% url %} þá passaði ég að við værum alltaf með einfaldar gæsalappir og breytti þeim ef það var ekki þannig. Bjó til takka sem birtist neðst á síðunni rétt fyrir ofan footer og hann sér enginn
+nema að hann sé merktur sem super_user (en það var það sem við ákváðum að nota fyrir admin) en ef þú ert super_user þá fer þessi takki með þig á create_product síðuna og þar fylliru út allar þær upplýsingar sem
+þarf til að búa til nýjar vörur. Breytti smá validationinu í checkout. 
 
 
 
