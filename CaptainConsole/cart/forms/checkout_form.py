@@ -68,7 +68,7 @@ class CheckoutForm(ModelForm):
         if len(str(CVC)) != 3:
             raise ValidationError("This is not a valid cvc")
 
-        return CVC
+        return '***'
 
     def clean_Expiration_date(self):
         Expiration_date = self.cleaned_data['Expiration_date']
