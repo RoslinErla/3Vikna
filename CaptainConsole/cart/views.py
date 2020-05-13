@@ -31,13 +31,14 @@ def add_to_cart(request, id):
             'firstImage': x.productimage_set.first().image
         } for x in Product.objects.filter(name__icontains=search)]
         return JsonResponse({'data': products})
-    # cart = user = (user=User.findbyid(request.user.id), product=product.findby(id))
     if request.user.is_authenticated:
         user = request.user.id
         object = Cart.objects.filter(product_id=id, user_id=user).first()
-        if object != None:
+        if object is not None:
             object.quantity += 1
+            object.save()
             return redirect('cart-index')
+
 
         cart = Cart(product_id=id, user_id=user)
         cart.save()
@@ -60,10 +61,33 @@ def cart(request):
     total_price = 0
     product_list = []
     for o in context['products']:
-        product_list.append(Product.objects.filter(id=o.product_id).first())
-        total_price += Product.objects.filter(id=o.product_id).first().price
+        product_list.append((Product.objects.filter(id=o.product_id).first(), o.quantity))
+        total_price += Product.objects.filter(id=o.product_id).first().price * o.quantity
     context = {'products': product_list, 'total': total_price}
+    print(context)
     return render(request, 'cart/cart-index.html', context)
+
+
+def remove_product(request, id):
+    if 'search_filter' in request.GET:
+        search = request.GET['search_filter']
+        products = [{
+            'id': x.id,
+            'name': x.name,
+            'price': x.price,
+            'firstImage': x.productimage_set.first().image
+        } for x in Product.objects.filter(name__icontains=search)]
+        return JsonResponse({'data': products})
+
+    user = request.user.id
+    object = Cart.objects.filter(product_id=id, user_id=user).first()
+
+    object.quantity -= 1
+    if object.quantity <= 0:
+        object.delete()
+
+    object.save()
+    return redirect('cart-index')
 
 
 def checkout(request):
