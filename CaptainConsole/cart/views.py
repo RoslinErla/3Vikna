@@ -57,14 +57,19 @@ def cart(request):
             'firstImage': x.productimage_set.first().image
         } for x in Product.objects.filter(name__icontains=search)]
         return JsonResponse({'data': products})
+    if not request.user.is_authenticated:
+        return redirect('login')
     context = {'products': Cart.objects.filter(user_id=request.user.id)}
     total_price = 0
     product_list = []
+    checkout = Checkout.objects.filter(User_id=request.user.id)
+    checkout.delete()
     for o in context['products']:
         product_list.append((Product.objects.filter(id=o.product_id).first(), o.quantity))
         total_price += Product.objects.filter(id=o.product_id).first().price * o.quantity
     context = {'products': product_list, 'total': total_price}
-    print(context)
+    if len(product_list) == 0:
+        return render(request, 'cart/empty_cart.html')
     return render(request, 'cart/cart-index.html', context)
 
 
@@ -91,18 +96,15 @@ def remove_product(request, id):
 
 
 def checkout(request):
-    user = request.user.id
+    checkout = Checkout.objects.filter(User_id=request.user.id).first()
+    form = CheckoutForm(instance=checkout)
     if request.method == 'POST':
-        form = CheckoutForm(data=request.POST)
+        form = CheckoutForm(instance=checkout, data=request.POST)
         if form.is_valid():
-            checkout = Checkout(Full_name=request.POST['Full_name'], Address=request.POST['Address'], City=request.POST['City'],
-                                Postal_code=request.POST['Postal_code'], Name_of_cardholder=request.POST['Name_of_cardholder'],
-                                Card_number=request.POST['Card_number'], Expiration_date=request.POST['Expiration_date'],
-                                CVC=request.POST['CVC'], User_id=user)
+            checkout = form.save(commit=False)
+            checkout.User_id = request.user.id
             checkout.save()
             return redirect('read-only')
-    else:
-        form = CheckoutForm()
 
     return render(request, 'cart/checkout.html', {
         'form': form
@@ -115,6 +117,7 @@ def read_only_review(request):
     product_list = list()
     for elements in context2['products']:
         product_list.append(Product.objects.filter(id=elements.product_id).first())
+    print(product_list)
 
     context = {'information': Checkout.objects.filter(User_id=user), 'products': product_list}
 
@@ -124,7 +127,7 @@ def read_only_review(request):
 def success(request):
     user = request.user.id
     checkout = get_object_or_404(Checkout, User_id=user)
-    cart = get_object_or_404(Cart, user_id=user)
+    cart = Cart.objects.filter(user_id=user)
     cart.delete()
     checkout.delete()
     return render(request, 'cart/Success.html')

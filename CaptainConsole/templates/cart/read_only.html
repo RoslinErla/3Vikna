@@ -2,6 +2,12 @@
 {% block content %}
     <h1>Read only review</h1>
 
+    <div class="products">
+    {% for product in products %}
+         {% include 'cart/read_only_display.html' with product=product %}
+    {% endfor %}
+    </div>
+
     {% for elements in information %}
         <p>Full name: {{ elements.Full_name }}</p>
         <p>Address: {{ elements.Address }}</p>
@@ -10,13 +16,14 @@
         <p>Name of cardholder: {{ elements.Name_of_cardholder }}</p>
         <p>Card Number: {{ elements.Card_number }}</p>
         <p>Expiration date: {{ elements.Expiration_date }}</p>
-        <p>CVC: ***</p>
+        <p>CVC: {{ elements.CVC }}</p>
     {% endfor %}
 
-    <a class="nav-link" href="{% url 'checkout' %}">
-        <button class="back-button" type="button">Back to checkout</button>
-    </a>
     <a class="nav-link" href="{% url 'success' %}">
         <button class="btn btn-primary" type="button">Pay</button>
     </a>
+    <a class="nav-link" href="{% url 'checkout' %}">
+        <button class="back-button" type="button">Back to checkout</button>
+    </a>
+
 {% endblock %}

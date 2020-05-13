@@ -60,37 +60,44 @@ class CheckoutForm(ModelForm):
 
         if len(str(Card_number)) != 16:
             raise ValidationError("This is not a valid card number")
-
+        for letter in str(Card_number):
+            if letter.isalpha():
+                raise ValidationError("This is not a valid Card number")
         return Card_number
 
     def clean_CVC(self):
         CVC = self.cleaned_data['CVC']
         if len(str(CVC)) != 3:
             raise ValidationError("This is not a valid cvc")
-
-        return '***'
+        for letter in str(CVC):
+            if letter.isalpha():
+                raise ValidationError("This is not a valid cvc")
+        return CVC
 
     def clean_Expiration_date(self):
         Expiration_date = self.cleaned_data['Expiration_date']
-        date = datetime.strptime(Expiration_date, '%Y-%m-%d')
+        try:
+            date = datetime.strptime(Expiration_date, '%Y-%m-%d')
+        except ValueError:
+            raise ValidationError("This date is invalid")
+
         print(date)
         if date < datetime.now():
             raise ValidationError("This card has expired")
 
         return Expiration_date
 
-
-
     Full_name = forms.CharField(label='Full name', required=True, widget=forms.TextInput(attrs={'class': 'form-control'}))
     Address = forms.CharField(label='Address', required=True, widget=forms.TextInput(attrs={'class': 'form-control'}))
     City = forms.ChoiceField(choices=city_choices, required=True, widget=forms.Select(attrs={'class': 'form-control'}))
     Postal_code = forms.IntegerField(label='Postal code', required=True, widget=forms.NumberInput(attrs={'class': 'form-control'}))
     Name_of_cardholder = forms.CharField(label='Name of cardholder', required=True, widget=forms.TextInput(attrs={'class': 'form-control'}))
-    Card_number = forms.IntegerField(label='Card number all in one continuous string', required=True, widget=forms.NumberInput(attrs={'class': 'form-control'}))
+    Card_number = forms.CharField(label='Card number all in one continuous string', required=True, widget=forms.TextInput(attrs={'class': 'form-control'}))
     Expiration_date = forms.CharField(label='Expiration date (year-mm-dd)', widget=forms.TextInput(attrs={'class': 'form-control'}))
-    CVC = forms.IntegerField(label='CVC', required=True, widget=forms.NumberInput(attrs={'class': 'form-control'}))
+    CVC = forms.CharField(label='CVC', required=True, widget=forms.TextInput(attrs={'class': 'form-control'}))
+
     class Meta:
         model = Checkout
-        exclude = ['id']
+        exclude = ['id', 'user_id']
         fields = ('Full_name', 'Address', 'City', 'Postal_code', 'Name_of_cardholder', 'Card_number', 'Expiration_date', 'CVC')
 

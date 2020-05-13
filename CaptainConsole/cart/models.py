@@ -16,6 +16,6 @@ class Checkout(models.Model):
     City = models.CharField(max_length=255)
     Postal_code = models.FloatField()
     Name_of_cardholder = models.CharField(max_length=999)
-    Card_number = models.CharField(max_length=16)
+    Card_number = models.CharField(max_length=19)
     Expiration_date = models.DateField()
-    CVC = models.FloatField()
+    CVC = models.CharField(max_length=3)
