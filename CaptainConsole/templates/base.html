@@ -25,8 +25,15 @@
     <div class="container">
     {% block content %}
     {% endblock %}
+    {% if user.is_superuser %}
+        <a href = "{% url 'create_product' %}" id = "new_product" class = "btn btn-primary btn-lg active" type="button">Add new product to the page</a>
+    {% endif %}
     </div>
 
+    <br>
+
+
+    <br>
     <br>
      {% include "footer.html" %}
 

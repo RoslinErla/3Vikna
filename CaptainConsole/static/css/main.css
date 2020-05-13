@@ -111,7 +111,11 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+#new_product {
+    position: absolute;
+    right: 10px;
 
+}
 .product-image {
     width: 200px;
     height: 200px;
@@ -123,6 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     margin-top: 1%;
+    position:relative;
 }
 
 .btn-link {
