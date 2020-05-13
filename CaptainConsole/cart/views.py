@@ -82,11 +82,11 @@ def remove_product(request, id):
     user = request.user.id
     object = Cart.objects.filter(product_id=id, user_id=user).first()
 
-    object.quantity -= 1
-    if object.quantity <= 0:
+    if object.quantity == 1:
         object.delete()
-
-    object.save()
+    else:
+        object.quantity -= 1
+        object.save()
     return redirect('cart-index')
 
 
