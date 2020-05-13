@@ -74,6 +74,11 @@ en síðan þegar þú ýtir á pay þá eyðast allar upplýsingar um þig úr 
 uppfæra það. Fyrsta draft er allavega til. Skrifaði niður allt það sem var eftir og óljóst svo við gætum spurt TA á morgun þegar við hittum hán. Bætti við sign up takka á login formið svo þú gætir einnig farið í
 sign up þaðan. 
 
+13.5.2020.
+Hjálpaði Herði að klára cartið og alla virkni þar inni. Breytti models í profile og cart. Núna er name í profile og cart er með quantity. Kláraði checkoutið. Það virkar núna fullkomlega og upplýsingar haldast inni á meða
+þú ert í cart pakkanum af hlutum (semsagt checkout, read_only dótið) en ef þú ferð úr cartinu eða þegar þú klárar að borga þá eyðast allar upplýsingar út. Edit profile í profile virkar núna og það sýnir einnig 
+username-ið þitt. Ef það er ekkert í körfunni þinni þá getur þú ekki ýtt á purchase takkan.  
+
 
 
   
