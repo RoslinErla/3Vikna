@@ -124,6 +124,8 @@ def read_only_review(request):
 def success(request):
     user = request.user.id
     checkout = get_object_or_404(Checkout, User_id=user)
+    cart = get_object_or_404(Cart, user_id=user)
+    cart.delete()
     checkout.delete()
     return render(request, 'cart/Success.html')
 
