@@ -144,7 +144,7 @@ def index10(request):
             'firstImage': x.productimage_set.first().image
         } for x in Product.objects.filter(name__icontains=search)]
         return JsonResponse({'data': products})
-    context = {'products': Product.objects.filter(type='Consoles').filter(manufacturer__icontains='playstation').order_by('price')}
+    context = {'products': Product.objects.filter(type='Consoles').filter(manufacturer__icontains='nintendo').order_by('price')}
     return render(request, 'consoles/nintendo.html', context)
 
 
