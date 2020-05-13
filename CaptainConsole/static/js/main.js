@@ -13,7 +13,7 @@ $(document).ready(function(){
                                     <img class="product-image" src="${d.firstImage}"/>
                                     <h4>${d.name}</h4>
                                     <p>${d.price} isk</p>
-                                    <a href = "{% url 'add-to-cart' product.id %}" class = "add-to-cart-btn" type="button">Add to Cart</a>
+                                    <a href = "cart/add_to_cart/${d.id}" class = "add-to-cart-btn" type="button">Add to Cart</a>
                                 </a>
                             </div>`
                 });
