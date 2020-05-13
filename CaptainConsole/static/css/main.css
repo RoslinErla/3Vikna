@@ -10,6 +10,25 @@
     background-size: cover;
     height: 250px;
     max-width: 800px;
+
+}
+
+#captain {
+        font-size: 30px;
+        font-family: 'Press Start 2P', cursive;
+        padding-left: 60px;
+        float: left;
+        padding-top: 100px;
+
+    }
+
+#console {
+        font-size: 30px;
+        font-family: 'Press Start 2P', cursive;
+        float: right;
+        padding-top: 100px;
+        padding-right: 60px;
+
 }
 
 
