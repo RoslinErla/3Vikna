@@ -5,7 +5,7 @@
     <p>{{ products.description }}</p>
     <p>Price: {{ products.price }} ISK</p>
     <p>Manufacturer: {{ products.manufacturer }}</p>
-    <button id = "{{ product.id }}, {{ product.name }}, {{ product.price }}" class = "add-to-cart-btn" type="button">Add to Cart</button>
+    <a href = "{% url 'add-to-cart' products.id %}" class = "btn btn-outline-dark" type="button">Add to Cart</a>
     <br>
     <br>
     {% for product_image in products.productimage_set.all  %}
