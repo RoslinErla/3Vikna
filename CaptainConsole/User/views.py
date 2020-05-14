@@ -74,6 +74,15 @@ def get_product_by_id(request, id):
 
 
 def browsing_history(request):
+    if 'search_filter' in request.GET:
+        search = request.GET['search_filter']
+        products = [{
+            'id': x.id,
+            'name': x.name,
+            'price': x.price,
+            'firstImage': x.productimage_set.first().image
+        } for x in Product.objects.filter(name__icontains=search)]
+        return JsonResponse({'data': products})
     user = request.user.id
     context = {'products': Search.objects.filter(user_id=user)}
     context_list = list()

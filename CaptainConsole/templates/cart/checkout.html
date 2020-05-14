@@ -5,7 +5,7 @@
         {% csrf_token %}
         {{ form }}
         <br>
-        <input type="submit" class="btn btn-primary" value="Checkout"/>
+        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Checkout"/>
     </form>
     <br>
     <a href="{% url 'cart-index' %}" class="btn btn-outline-danger">Back to cart</a>

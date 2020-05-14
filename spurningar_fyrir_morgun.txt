@@ -1,9 +1,0 @@
-* Hvernig fæ ég upplýsingarnar til að haldast inni ef ég fer fram og til baka í checkout
-
-* Vil ná í allt heila klabbið úr database og sýna korta upplýsingar flottar (1234-1234) og sýna bara síðustu 
-	4 stafi annað er stjörnumerkt (****-****-****-1234)
-
-
-
-
-

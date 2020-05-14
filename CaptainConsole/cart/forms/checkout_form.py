@@ -55,6 +55,19 @@ class CheckoutForm(ModelForm):
 
         return Full_name
 
+    def clean_Address(self):
+        Address = self.cleaned_data['Address'].lower()
+        letters = list()
+        for letter in str(Address):
+            if letter.isalpha():
+                letters.append(letter)
+
+        if len(letters) == 0:
+            raise ValidationError("Your address has to contain at least one letter")
+
+        return Address
+
+
     def clean_Card_number(self):
         Card_number = self.cleaned_data['Card_number']
 
