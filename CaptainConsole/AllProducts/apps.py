@@ -8,7 +8,8 @@ class AllproductsConfig(AppConfig):
 
 class InsertProduct():
     def __init__(self):
-        pass
+        if user.is_superuser:
+            return
 
     def DeleteProduct(self):
         pass
