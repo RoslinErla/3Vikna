@@ -55,8 +55,8 @@ Day 15 Single product if statements.
 
 Day 16 Single product package products.
 
-a) Edit product
-b) Delete product
+a) Edit product - CP test failed
+b) Delete product - CP taste failed
 
 Next is finishing the product and creating video.
 
