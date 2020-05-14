@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
+    <form class="form form-horizontal" action={% url 'edit_product' id %} method="post">
+        {% csrf_token %}
+        {{ form }}
+        <br>
+        <input type="submit" value="edit" class="btn btn-primary">
+    </form>
+{% endblock %}
 
-</body>
-</html>
+function productsEdit() {
+  $("#productTable tbody").append(
+      "<tr>" +
+        "<td>Edit product</td>" +
+        "<td>6/11/2015</td>" +
+        "<td>www.pluralsight.com</td>" +
+      "</tr>"
+  );
+}
