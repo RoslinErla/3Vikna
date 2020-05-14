@@ -8,12 +8,14 @@
     </form>
 {% endblock %}
 
+{% extends "base.html" %}
+{% blockcontent %}
 function productsEdit() {
   $("#productTable tbody").append(
       "<tr>" +
         "<td>Edit product</td>" +
-        "<td>6/11/2015</td>" +
-        "<td>www.pluralsight.com</td>" +
       "</tr>"
   );
 }
+
+    {% endblock %}
