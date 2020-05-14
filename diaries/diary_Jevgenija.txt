@@ -51,7 +51,7 @@ Day 13 pyCharm psycopg2 error problem fixed
 
 Day 14 Attempt of production functionality addition..
 
-Day 15 Single product is statements
+Day 15 Single product is statements.
 
 Day 16
 
