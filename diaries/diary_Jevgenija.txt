@@ -58,7 +58,7 @@ Day 16 Single product package products.
 a) Edit product - CP test failed
 b) Delete product - CP taste failed
 
-Tested product urls. Test.
+Tested product urls. Test. Verður að reyna aftur á morgun.
 
 Next is finishing the product and creating video.
 
