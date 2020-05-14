@@ -55,6 +55,8 @@ Day 15 Single product if statements.
 
 Day 16 Single product package products.
 
+a) Edit product
+
 Next is finishing the product and creating video.
 
 
