@@ -197,3 +197,7 @@ def update_product(request, id):
         'form': form,
         'id': id
     })
+
+
+def check(request):
+    return render(request, 'allProducts/delete.html')

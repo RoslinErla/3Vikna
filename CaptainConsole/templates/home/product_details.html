@@ -11,7 +11,15 @@
     {% for product_image in products.productimage_set.all  %}
         <img src="{{ product_image.image }}" class="product-image" />
     {% endfor %}
-</div>
-    <div class="products"></div>
 
+</div>
+
+    <div class="products"></div>
+    {% if user.is_superuser %}
+        <a href = "{% url 'delete_product' products.id %}" class = "btn btn-primary btn-lg btn-block" type="button">Delete this products</a>
+        <a href = "{% url 'update_product' products.id %}" class = "btn btn-primary btn-lg btn-block" type="button">Update this products</a>
+        <br>
+        <br>
+    {% endif %}
 {% endblock %}
+
