@@ -53,5 +53,5 @@ Day 14 Attempt of production functionality addition..
 
 Day 15 Single product if statements.
 
-Day 16 
+Day 16 Single product package products.
 
