@@ -10,6 +10,7 @@ from User.forms.forms import NewUserForm
 from User.models import Profile
 from Search.models import Search
 from AllProducts.models import Product
+from cart.models import Checkout
 
 
 def register(request):
@@ -75,4 +76,9 @@ def browsing_history(request):
     context = {'products': context_list}
     return render(request, 'admin/history.html', context)
 
+
+def logout_first(request):
+    checkout = Checkout.objects.filter(User_id=request.user.id)
+    checkout.delete()
+    return redirect('logout')
 
