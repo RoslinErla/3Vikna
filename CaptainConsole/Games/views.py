@@ -159,7 +159,7 @@ def get_product_by_id(request, id):
         return JsonResponse({'data': products})
     if request.user.is_authenticated:
         user = request.user.id
-        already_there = Search.objects.filter(product_id=id)
+        already_there = Search.objects.filter(product_id=id, user_id=user).first()
         if not already_there:
             search = Search(product_id=id, user_id=user)
             search.save()

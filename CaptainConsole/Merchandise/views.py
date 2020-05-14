@@ -157,9 +157,10 @@ def get_product_by_id(request, id):
             'firstImage': x.productimage_set.first().image
         } for x in Product.objects.filter(name__icontains=search)]
         return JsonResponse({'data': products})
+
     if request.user.is_authenticated:
         user = request.user.id
-        already_there = Search.objects.filter(product_id=id)
+        already_there = Search.objects.filter(product_id=id, user_id=user).first()
         if not already_there:
             search = Search(product_id=id, user_id=user)
             search.save()
