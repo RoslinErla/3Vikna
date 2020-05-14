@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+    <form class="form form-horizontal" action={% url 'delete_product' id %} method="post">
+        {% csrf_token %}
+        {{ form }}
+        <br>
+        <input type="submit" value="delete" class="btn btn-primary">
+    </form>
+{% endblock %}
