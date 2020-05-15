@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+
+# handler404 = 'AllProducts.views.my_custom_page_not_found_view'
+
 """localhost:3000/admin"""
 
 urlpatterns = [

@@ -160,6 +160,8 @@ def get_product_by_id(request, id):
 
 
 def create_product(request):
+    if not request.user.is_superuser:
+        return redirect('home-index')
     if request.method == 'POST':
         form = ProductCreateForm(data=request.POST)
         if form.is_valid():
@@ -176,12 +178,16 @@ def create_product(request):
 
 
 def delete_product(request, id):
+    if not request.user.is_superuser:
+        return redirect('home-index')
     product = get_object_or_404(Product, pk=id)
     product.delete()
     return redirect('home-index')
 
 
 def update_product(request, id):
+    if not request.user.is_superuser:
+        return redirect('home-index')
     instance = get_object_or_404(Product, pk=id)
 
     if request.method == 'POST':
@@ -198,6 +204,3 @@ def update_product(request, id):
         'id': id
     })
 
-
-def check(request):
-    return render(request, 'allProducts/delete.html')
