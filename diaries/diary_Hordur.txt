@@ -42,3 +42,17 @@ the database a bit.
 11/5/20
 finally fixed a very boring bug that I had been trying to fix during the weekend. Helped finding bugs for the search bar in the
 navigation bar, changed code for some buttons and the banner/header.
+
+12/5/20
+Worked mostly on the cart with the help of roslin and helped her with some other stuff throughout the day.
+
+13/5/20
+Worked on cart-login connection, helped with the search history, worked on and finished the cart code. Used the site extensively, 
+looking for bugs to be fixed as it is almost finished.
+
+14/5/20
+Looked for things that could go wrong for the site by testing it some more, planned out the presentation video with the group and then 
+edited/clipped it together after we had finished the recording. 
+
+15/5/20
+Site done.
