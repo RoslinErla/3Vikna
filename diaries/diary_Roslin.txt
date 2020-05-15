@@ -87,7 +87,7 @@ nema að hann sé merktur sem super_user (en það var það sem við ákváðum
 
 15.5.2020.
 Bjó til svona custom error síður fyrir 404 og 500. Fór aðeins yfir kóðann og lagaði nokkrar gæsalappir. Passaði að ef þú ert ekki super_user(admin) að þá getur þú ekki farið inn í /create_product og delete og 
-update og allt það. 
+update og allt það. Fundum eina villu og ég lagaði hana. Skilaði síðan verkefninu.
 
 
 
