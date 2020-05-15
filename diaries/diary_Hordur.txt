@@ -55,4 +55,4 @@ Looked for things that could go wrong for the site by testing it some more, plan
 edited/clipped it together after we had finished the recording. 
 
 15/5/20
-Site done.
+Helped Roslin look for bugs which she fixed before turning in the assignment.
